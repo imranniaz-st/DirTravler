@@ -769,3 +769,27 @@ Nmap done: 1 IP address (1 host up) scanned in 152.30 seconds
 -----------------------------
 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:22 UTC
+Nmap scan report for 94.144.106.34.bc.googleusercontent.com (34.106.144.94)
+Host is up (0.25s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT    STATE SERVICE   VERSION
+443/tcp open  ssl/https
+| http-robots.txt: 87 disallowed entries (15 shown)
+| /cgibin/ /il/cart/ /*?cmd=_pce* /row/ /xclick-auction* 
+| /affil/ /*?cmd=_flow* /*?cmd=_mobile-activate-outside 
+| /*?SESSION* /*?cmd=_s-xclick* /subscriptions/ /ireceipt/get/ 
+|_/ireceipt/get? /getCallUsInfoData/ /*?action=callus
+| ssl-cert: Subject: commonName=edge.sandbox.paypal.com/organizationName=PayPal, Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:edge.sandbox.paypal.com
+| Not valid before: 2024-11-06T00:00:00
+|_Not valid after:  2025-11-05T23:59:59
+| http-title: Digital Wallets, Money Management, and More | PayPal US
+|_Requested resource was /us/home
+|_ssl-date: TLS randomness does not represent time
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 192.05 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:26 UTC
