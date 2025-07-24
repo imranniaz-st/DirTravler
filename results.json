@@ -1563,3 +1563,87 @@
     ""
   ]
 }
+{
+  "ip": "pointofsale.sandbox.paypal.com",
+  "http_status": "404",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp closed 8080/tcp closed",
+  "server_header": "",
+  "ssl_issuer": "C = US, O = DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+  "ssl_expiry": "Jul 17 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "api-aa-3t.sandbox.paypal.com",
+  "http_status": "404",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp closed 8080/tcp closed",
+  "server_header": "",
+  "ssl_issuer": "C = US, O = DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+  "ssl_expiry": "Jul 17 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "api-aa-v2.sandbox.paypal.com",
+  "http_status": "400",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp closed 8080/tcp closed",
+  "server_header": "",
+  "ssl_issuer": "C = US, O = DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+  "ssl_expiry": "Jul 17 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "api-v1.sandbox.paypal.com",
+  "http_status": "",
+  "open_ports": "",
+  "server_header": "",
+  "ssl_issuer": "",
+  "ssl_expiry": "",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "paypalmanager.sandbox.paypal.com",
+  "http_status": "200",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp closed 8080/tcp closed",
+  "server_header": "",
+  "ssl_issuer": "C = US, O = DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+  "ssl_expiry": "Jul 17 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "api-3t-v2.sandbox.paypal.com",
+  "http_status": "404",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp closed 8080/tcp closed",
+  "server_header": "",
+  "ssl_issuer": "C = US, O = DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+  "ssl_expiry": "Jul 17 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "svcs.sandbox.paypal.com",
+  "http_status": "403",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp closed 8080/tcp closed",
+  "server_header": "",
+  "ssl_issuer": "C = US, O = DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+  "ssl_expiry": "Jul 17 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}

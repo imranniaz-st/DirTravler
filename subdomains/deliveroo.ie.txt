@@ -1,0 +1,16 @@
+admin.deliveroo.ie
+order-staging.deliveroo.ie
+order.deliveroo.ie
+milano.order.deliveroo.ie
+careers-staging.deliveroo.ie
+rider.deliveroo.ie
+riders.deliveroo.ie
+sandbox.deliveroo.ie
+www.deliveroo.ie
+careers.deliveroo.ie
+sanopizza.order.deliveroo.ie
+staging.deliveroo.ie
+test.deliveroo.ie
+dtm.deliveroo.ie
+cdn0.deliveroo.ie
+foodscene.deliveroo.ie
