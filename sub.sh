@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Input file
-input="domain.txt"
+input="bugbo.txt"
 
 # Output directory
 mkdir -p subdomains
