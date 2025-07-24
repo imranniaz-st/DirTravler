@@ -1,0 +1,6 @@
+malting-traffic.deliveroo-data.net
+sql-monkey-staging.deliveroo-data.net
+kibana-canoe-production.deliveroo-data.net
+jenkins-canoe-production-tst.deliveroo-data.net
+sql-monkey.deliveroo-data.net
+dashboard.deliveroo-data.net
