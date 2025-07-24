@@ -3028,3 +3028,13 @@ https://103.164.67.227/cpmove-mhyzp1rl/cpmove-mhyzp1rl/cpmove-mhyzp1rl/domainkey
 https://103.164.67.227/cpmove-mhyzp1rl/cpmove-mhyzp1rl/cpmove-mhyzp1rl/domainkeys/public/
 https://103.164.67.227/cpmove-mhyzp1rl/cpmove-mhyzp1rl/cpmove-mhyzp1rl/homedir/
 https://103.164.67.227/cpmove-mhyzp1rl/cpmove-mhyzp1rl/cpmove-mhyzp1rl/homedir/etc/
+https://103.164.67.227/cpmove-mhyzp1rl/cpmove-mhyzp1rl/cpmove-mhyzp1rl/homedir/etc/kisworks.com/
+https://103.164.67.227/cpmove-mhyzp1rl/cpmove-mhyzp1rl/cpmove-mhyzp1rl/homedir/etc/kisworks.com/@pwcache/
+https://103.164.67.227/cpmove-mhyzp1rl/cpmove-mhyzp1rl/cpmove-mhyzp1rl/homedir/etc/kisworks.com/admin/
+https://103.164.67.227/cpmove-mhyzp1rl/cpmove-mhyzp1rl/cpmove-mhyzp1rl/homedir/etc/kisworks.com/digitalmarketing/
+https://103.164.67.227/cpmove-mhyzp1rl/cpmove-mhyzp1rl/cpmove-mhyzp1rl/homedir/etc/kisworks.com/gurmeetsingh/
+https://103.164.67.227/cpmove-mhyzp1rl/cpmove-mhyzp1rl/cpmove-mhyzp1rl/homedir/etc/kisworks.com/support/
+https://103.164.67.227/cpmove-mhyzp1rl/cpmove-mhyzp1rl/cpmove-mhyzp1rl/homedir/logs/
+https://103.164.67.227/cpmove-mhyzp1rl/cpmove-mhyzp1rl/cpmove-mhyzp1rl/homedir/logs/roundcube/
+https://103.164.67.227/cpmove-mhyzp1rl/cpmove-mhyzp1rl/cpmove-mhyzp1rl/homedir/mail/
+https://103.164.67.227/cpmove-mhyzp1rl/cpmove-mhyzp1rl/cpmove-mhyzp1rl/homedir/mail/cur/
