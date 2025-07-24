@@ -1,0 +1,13 @@
+staging.igpayment.com
+testing.igpayment.com
+subscription.igpayment.com
+staging-error.igpayment.com
+staging-slow.igpayment.com
+www.testing.igpayment.com
+www.staging.igpayment.com
+www.igpayment.com
+staging-timeout.igpayment.com
+www.subscription.igpayment.com
+www.staging-timeout.igpayment.com
+www.staging-error.igpayment.com
+www.staging-slow.igpayment.com
