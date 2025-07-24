@@ -1755,3 +1755,118 @@ Nmap done: 1 IP address (1 host up) scanned in 22.66 seconds
 -----------------------------
 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:47 UTC
+Nmap scan report for ec2-3-217-251-72.compute-1.amazonaws.com (3.217.251.72)
+Host is up (0.22s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     awselb/2.0
+|_http-server-header: awselb/2.0
+|_http-title: Did not follow redirect to https://ec2-3-217-251-72.compute-1.amazonaws.com:443/
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 301 Moved Permanently
+|     Server: awselb/2.0
+|     Date: Thu, 24 Jul 2025 18:47:52 GMT
+|     Content-Type: text/html
+|     Content-Length: 134
+|     Connection: close
+|     Location: https://domains-parking-alb-1181524227.us-east-1.elb.amazonaws.com:443/nice%20ports%2C/Tri%6Eity.txt%2ebak
+|     <html>
+|     <head><title>301 Moved Permanently</title></head>
+|     <body>
+|     <center><h1>301 Moved Permanently</h1></center>
+|     </body>
+|     </html>
+|   GetRequest: 
+|     HTTP/1.1 301 Moved Permanently
+|     Server: awselb/2.0
+|     Date: Thu, 24 Jul 2025 18:47:50 GMT
+|     Content-Type: text/html
+|     Content-Length: 134
+|     Connection: close
+|     Location: https://domains-parking-alb-1181524227.us-east-1.elb.amazonaws.com:443/
+|     <html>
+|     <head><title>301 Moved Permanently</title></head>
+|     <body>
+|     <center><h1>301 Moved Permanently</h1></center>
+|     </body>
+|     </html>
+|   HTTPOptions: 
+|     HTTP/1.1 301 Moved Permanently
+|     Server: awselb/2.0
+|     Date: Thu, 24 Jul 2025 18:47:51 GMT
+|     Content-Type: text/html
+|     Content-Length: 134
+|     Connection: close
+|     Location: https://domains-parking-alb-1181524227.us-east-1.elb.amazonaws.com:443/
+|     <html>
+|     <head><title>301 Moved Permanently</title></head>
+|     <body>
+|     <center><h1>301 Moved Permanently</h1></center>
+|     </body>
+|     </html>
+|   RTSPRequest: 
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     </body>
+|     </html>
+|   X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|     Server: awselb/2.0
+|     Date: Thu, 24 Jul 2025 18:47:52 GMT
+|     Content-Type: text/html
+|     Content-Length: 122
+|     Connection: close
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     </body>
+|_    </html>
+443/tcp open  ssl/http nginx
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Site doesn't have a title (application/octet-stream).
+| ssl-cert: Subject: commonName=accounts.magento.com
+| Subject Alternative Name: DNS:accounts.magento.com, DNS:support.magentocommerce.com, DNS:support.magento.com, DNS:www.marketplace.magento.com, DNS:magentousupport.magento.com, DNS:afterwork-dallas.magento.com, DNS:kickoff-apam.magento.com, DNS:careers.magento.com, DNS:magento-u.magento.com, DNS:license.magentocommerce.com, DNS:live-au.magento.com, DNS:eeeula.magento.com, DNS:demo.magentocommerce.com, DNS:eeeula.ecgservices.magento.com, DNS:picture.magentocommerce.com, DNS:enterprise.magento.com, DNS:de.magentocommerce.com, DNS:dmexco.magento.com, DNS:live-eu.magento.com, DNS:golinks.magento.com, DNS:demo-admin.magentocommerce.com, DNS:conf.magento.com, DNS:internetworld.magento.com, DNS:partnermarketing.magento.com, DNS:imagine2015.magento.com, DNS:celinks.magento.com, DNS:blog.magento.com, DNS:afterwork-nyc.magento.com, DNS:imagine.magento.com, DNS:afterwork.magento.com, DNS:m2m-la.magento.com, DNS:ecommerceexperience.magento.com, DNS:widgets.magentocommerce.com, DNS:mmeula.magento.com, DNS:enterprise-demo.magentocommerce.com, DNS:nrf.magento.com, DNS:webmail.magento.com, DNS:status.magento.com, DNS:irce.magento.com, DNS:de.magento.com, DNS:design.magento.com, DNS:mobileapp.magento.com, DNS:merch.docs.magento.com, DNS:wiki.magento.com, DNS:helpcenter.magento.com, DNS:de.enterprise.magento.com, DNS:afterwork-seattle.magento.com, DNS:eeula.magento.com, DNS:enterprise-admin.magentocommerce.com, DNS:afterwork-philadelphia.magento.com, DNS:m2m-portland.magento.com, DNS:smallbusiness.magento.com, DNS:afterwork-minneapolis.magento.com, DNS:commerceandcarryout.magento.com, DNS:info.magento.com, DNS:afterwork-chicago.magento.com, DNS:docs.magentocommerce.com, DNS:go.magento.com, DNS:stratus.magento.com, DNS:b2bexperience.magento.com, DNS:kickoff-emea.magento.com, DNS:www1.magento.com, DNS:ecgservices.magento.com, DNS:training.magento.com, DNS:biworkshops.magento.com, DNS:afterwork-sf.magento.com, DNS:holidays-in-july.magento.com, DNS:email.magento.com, DNS:afterwork-la.magento.com, DNS:ua.magento.com, DNS:meesa.magento.com, DNS:shoporg.magento.com
+| Not valid before: 2025-05-09T00:00:00
+|_Not valid after:  2026-06-07T23:59:59
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.94SVN%I=7%D=7/24%Time=68827FD6%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,175,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20a
+SF:wselb/2\.0\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:47:50\x20GMT\r\n
+SF:Content-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20
+SF:close\r\nLocation:\x20https://domains-parking-alb-1181524227\.us-east-1
+SF:\.elb\.amazonaws\.com:443/\r\n\r\n<html>\r\n<head><title>301\x20Moved\x
+SF:20Permanently</title></head>\r\n<body>\r\n<center><h1>301\x20Moved\x20P
+SF:ermanently</h1></center>\r\n</body>\r\n</html>\r\n")%r(HTTPOptions,175,
+SF:"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awselb/2\.0\r\n
+SF:Date:\x20Thu,\x2024\x20Jul\x202025\x2018:47:51\x20GMT\r\nContent-Type:\
+SF:x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20close\r\nLocat
+SF:ion:\x20https://domains-parking-alb-1181524227\.us-east-1\.elb\.amazona
+SF:ws\.com:443/\r\n\r\n<html>\r\n<head><title>301\x20Moved\x20Permanently<
+SF:/title></head>\r\n<body>\r\n<center><h1>301\x20Moved\x20Permanently</h1
+SF:></center>\r\n</body>\r\n</html>\r\n")%r(RTSPRequest,7A,"<html>\r\n<hea
+SF:d><title>400\x20Bad\x20Request</title></head>\r\n<body>\r\n<center><h1>
+SF:400\x20Bad\x20Request</h1></center>\r\n</body>\r\n</html>\r\n")%r(X11Pr
+SF:obe,110,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r
+SF:\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:47:52\x20GMT\r\nContent-Type
+SF::\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\
+SF:n<html>\r\n<head><title>400\x20Bad\x20Request</title></head>\r\n<body>\
+SF:r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n</body>\r\n</html
+SF:>\r\n")%r(FourOhFourRequest,198,"HTTP/1\.1\x20301\x20Moved\x20Permanent
+SF:ly\r\nServer:\x20awselb/2\.0\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x201
+SF:8:47:52\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20134\
+SF:r\nConnection:\x20close\r\nLocation:\x20https://domains-parking-alb-118
+SF:1524227\.us-east-1\.elb\.amazonaws\.com:443/nice%20ports%2C/Tri%6Eity\.
+SF:txt%2ebak\r\n\r\n<html>\r\n<head><title>301\x20Moved\x20Permanently</ti
+SF:tle></head>\r\n<body>\r\n<center><h1>301\x20Moved\x20Permanently</h1></
+SF:center>\r\n</body>\r\n</html>\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 49.86 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:48 UTC
