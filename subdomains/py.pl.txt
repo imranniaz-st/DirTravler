@@ -1,3 +1,0 @@
-www.py.pl
-xxx.py.pl
-zakupy.py.pl

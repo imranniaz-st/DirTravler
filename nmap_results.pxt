@@ -1338,3 +1338,164 @@ Nmap done: 1 IP address (1 host up) scanned in 61.06 seconds
 -----------------------------
 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:44 UTC
+Nmap scan report for ec2-3-122-176-248.eu-central-1.compute.amazonaws.com (3.122.176.248)
+Host is up (0.14s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+443/tcp  open  ssl/https
+|_http-title: Site doesn't have a title.
+| ssl-cert: Subject: commonName=api.braintreegateway.com/organizationName=PayPal, Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:api.braintreegateway.com, DNS:braintreegateway.com, DNS:www.braintreegateway.com
+| Not valid before: 2025-05-08T00:00:00
+|_Not valid after:  2026-05-07T23:59:59
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 302 
+|     Date: Thu, 24 Jul 2025 18:44:28 GMT
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 0
+|     Connection: close
+|     location: https://www.braintreegateway.com/login
+|     X-Frame-Options: SAMEORIGIN
+|     X-XSS-Protection: 1; mode=block
+|     X-Content-Type-Options: nosniff
+|     x-download-options: noopen
+|     x-permitted-cross-domain-policies: none
+|     referrer-policy: strict-origin-when-cross-origin
+|     Cache-Control: no-cache
+|     x-runtime: 0.006363
+|     vary: Origin
+|     x-request-id: e8ab36a5-d445-44ec-a04b-f2a4769c1e7d
+|     Content-Security-Policy: frame-ancestors 'self'
+|     X-BroxyId: e8ab36a5-d445-44ec-a04b-f2a4769c1e7d
+|     paypal-debug-id: 68f21299b1394
+|     Strict-Transport-Security: max-age=63072000; includeSubDomains
+|   HTTPOptions: 
+|     HTTP/1.1 404 
+|     Date: Thu, 24 Jul 2025 18:44:28 GMT
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 947
+|     Connection: close
+|     vary: Accept-Encoding
+|     x-runtime: 0.006258
+|     vary: Origin
+|     x-request-id: f1f5efb8-6ba6-4bfb-a8f7-b2359d372de8
+|     Content-Security-Policy: frame-ancestors 'self'
+|     X-BroxyId: f1f5efb8-6ba6-4bfb-a8f7-b2359d372de8
+|     paypal-debug-id: 29e5259594fd4
+|     Strict-Transport-Security: max-age=63072000; includeSubDomains
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+|     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+|     <head>
+|     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+|     <title>The page you were looking for doesn't exist (404)</title>
+|     <style type="text/css">
+|_    body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-s
+8443/tcp open  ssl/https-alt
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Site doesn't have a title.
+| ssl-cert: Subject: commonName=api.braintreegateway.com/organizationName=PayPal, Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:api.braintreegateway.com, DNS:braintreegateway.com, DNS:www.braintreegateway.com
+| Not valid before: 2025-05-08T00:00:00
+|_Not valid after:  2026-05-07T23:59:59
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, RTSPRequest: 
+|     HTTP/1.1 400 Bad request
+|     Content-length: 90
+|     Cache-Control: no-cache
+|     Connection: close
+|     Content-Type: text/html
+|     <html><body><h1>400 Bad request</h1>
+|     Your browser sent an invalid request.
+|     </body></html>
+|   FourOhFourRequest, GetRequest, HTTPOptions: 
+|     HTTP/1.1 403 Forbidden
+|     Content-Length: 93
+|     Cache-Control: no-cache
+|     Content-Type: text/html
+|     Strict-Transport-Security: max-age=63072000; includeSubDomains
+|     connection: close
+|     <html><body><h1>403 Forbidden</h1>
+|     Request forbidden by administrative rules.
+|_    </body></html>
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=7/24%Time=68827F0C%P=x86_64-pc-linux-
+SF:gnu%r(GetRequest,2BE,"HTTP/1\.1\x20302\x20\r\nDate:\x20Thu,\x2024\x20Ju
+SF:l\x202025\x2018:44:28\x20GMT\r\nContent-Type:\x20text/html;\x20charset=
+SF:utf-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\nlocation:\x20h
+SF:ttps://www\.braintreegateway\.com/login\r\nX-Frame-Options:\x20SAMEORIG
+SF:IN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options:\
+SF:x20nosniff\r\nx-download-options:\x20noopen\r\nx-permitted-cross-domain
+SF:-policies:\x20none\r\nreferrer-policy:\x20strict-origin-when-cross-orig
+SF:in\r\nCache-Control:\x20no-cache\r\nx-runtime:\x200\.006363\r\nvary:\x2
+SF:0Origin\r\nx-request-id:\x20e8ab36a5-d445-44ec-a04b-f2a4769c1e7d\r\nCon
+SF:tent-Security-Policy:\x20frame-ancestors\x20'self'\r\nX-BroxyId:\x20e8a
+SF:b36a5-d445-44ec-a04b-f2a4769c1e7d\r\npaypal-debug-id:\x2068f21299b1394\
+SF:r\nStrict-Transport-Security:\x20max-age=63072000;\x20includeSubDomains
+SF:\r\n\r\n")%r(HTTPOptions,569,"HTTP/1\.1\x20404\x20\r\nDate:\x20Thu,\x20
+SF:24\x20Jul\x202025\x2018:44:28\x20GMT\r\nContent-Type:\x20text/html;\x20
+SF:charset=utf-8\r\nContent-Length:\x20947\r\nConnection:\x20close\r\nvary
+SF::\x20Accept-Encoding\r\nx-runtime:\x200\.006258\r\nvary:\x20Origin\r\nx
+SF:-request-id:\x20f1f5efb8-6ba6-4bfb-a8f7-b2359d372de8\r\nContent-Securit
+SF:y-Policy:\x20frame-ancestors\x20'self'\r\nX-BroxyId:\x20f1f5efb8-6ba6-4
+SF:bfb-a8f7-b2359d372de8\r\npaypal-debug-id:\x2029e5259594fd4\r\nStrict-Tr
+SF:ansport-Security:\x20max-age=63072000;\x20includeSubDomains\r\n\r\n<!DO
+SF:CTYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transition
+SF:al//EN\"\n\x20\x20\x20\x20\x20\x20\x20\"http://www\.w3\.org/TR/xhtml1/D
+SF:TD/xhtml1-transitional\.dtd\">\n\n<html\x20xmlns=\"http://www\.w3\.org/
+SF:1999/xhtml\"\x20xml:lang=\"en\"\x20lang=\"en\">\n\n<head>\n\x20\x20<met
+SF:a\x20http-equiv=\"content-type\"\x20content=\"text/html;\x20charset=UTF
+SF:-8\"\x20/>\n\x20\x20<title>The\x20page\x20you\x20were\x20looking\x20for
+SF:\x20doesn't\x20exist\x20\(404\)</title>\n\t<style\x20type=\"text/css\">
+SF:\n\t\tbody\x20{\x20background-color:\x20#fff;\x20color:\x20#666;\x20tex
+SF:t-align:\x20center;\x20font-family:\x20arial,\x20sans-s");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8443-TCP:V=7.94SVN%T=SSL%I=7%D=7/24%Time=68827F0B%P=x86_64-pc-linux
+SF:-gnu%r(GetRequest,110,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Length:
+SF:\x2093\r\nCache-Control:\x20no-cache\r\nContent-Type:\x20text/html\r\nS
+SF:trict-Transport-Security:\x20max-age=63072000;\x20includeSubDomains\r\n
+SF:connection:\x20close\r\n\r\n<html><body><h1>403\x20Forbidden</h1>\nRequ
+SF:est\x20forbidden\x20by\x20administrative\x20rules\.\n</body></html>\n")
+SF:%r(HTTPOptions,110,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Length:\x2
+SF:093\r\nCache-Control:\x20no-cache\r\nContent-Type:\x20text/html\r\nStri
+SF:ct-Transport-Security:\x20max-age=63072000;\x20includeSubDomains\r\ncon
+SF:nection:\x20close\r\n\r\n<html><body><h1>403\x20Forbidden</h1>\nRequest
+SF:\x20forbidden\x20by\x20administrative\x20rules\.\n</body></html>\n")%r(
+SF:FourOhFourRequest,110,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Length:
+SF:\x2093\r\nCache-Control:\x20no-cache\r\nContent-Type:\x20text/html\r\nS
+SF:trict-Transport-Security:\x20max-age=63072000;\x20includeSubDomains\r\n
+SF:connection:\x20close\r\n\r\n<html><body><h1>403\x20Forbidden</h1>\nRequ
+SF:est\x20forbidden\x20by\x20administrative\x20rules\.\n</body></html>\n")
+SF:%r(RTSPRequest,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length
+SF::\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nConten
+SF:t-Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\
+SF:nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\
+SF:n")%r(RPCCheck,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length
+SF::\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nConten
+SF:t-Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\
+SF:nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\
+SF:n")%r(DNSVersionBindReqTCP,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nCo
+SF:ntent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20clo
+SF:se\r\nContent-Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20r
+SF:equest</h1>\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</b
+SF:ody></html>\n")%r(DNSStatusRequestTCP,CF,"HTTP/1\.1\x20400\x20Bad\x20re
+SF:quest\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnect
+SF:ion:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<html><body><h1>400\
+SF:x20Bad\x20request</h1>\nYour\x20browser\x20sent\x20an\x20invalid\x20req
+SF:uest\.\n</body></html>\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 60.09 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:45 UTC
