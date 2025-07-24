@@ -1,0 +1,8 @@
+foodscene.deliveroo.de
+test.deliveroo.de
+cdn0.deliveroo.de
+www.deliveroo.de
+admin.deliveroo.de
+careers.deliveroo.de
+staging.deliveroo.de
+sandbox.deliveroo.de
