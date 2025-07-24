@@ -2904,3 +2904,121 @@ Nmap done: 1 IP address (1 host up) scanned in 37.94 seconds
 -----------------------------
 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:53 UTC
+Nmap scan report for 153.16.211.130.bc.googleusercontent.com (130.211.16.153)
+Host is up (0.0042s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+80/tcp  open  tcpwrapped
+443/tcp open  ssl/https
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+|_ssl-date: TLS randomness does not represent time
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, SSLSessionReq: 
+|     HTTP/1.0 400 Bad Request
+|     Content-Length: 54
+|     Content-Type: text/html; charset=UTF-8
+|     Date: Thu, 24 Jul 2025 18:53:45 GMT
+|     <html><title>Error 400 (Bad Request)!!1</title></html>
+|   HTTPOptions: 
+|     HTTP/1.0 404 Not Found
+|     content-type: text/html; charset=utf-8
+|     Content-Length: 53
+|     x-response-time: 0ms
+|     Date: Thu, 24 Jul 2025 18:53:35 GMT
+|     Via: 1.1 google
+|     Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+|     <html><body><h1>Resource not found</h1></body></html>
+|   Help: 
+|     HTTP/1.0 400 Bad Request
+|     Content-Type: text/html; charset=UTF-8
+|     Referrer-Policy: no-referrer
+|     Content-Length: 273
+|     Date: Thu, 24 Jul 2025 18:53:45 GMT
+|     <html><head>
+|     <meta http-equiv="content-type" content="text/html;charset=utf-8">
+|     <title>400 Bad Request</title>
+|     </head>
+|     <body text=#000000 bgcolor=#ffffff>
+|     <h1>Error: Bad Request</h1>
+|     <h2>Your client has issued a malformed or illegal request.</h2>
+|     <h2></h2>
+|     </body></html>
+|   RTSPRequest: 
+|     HTTP/1.0 400 Bad Request
+|     Content-Type: text/html; charset=UTF-8
+|     Referrer-Policy: no-referrer
+|     Content-Length: 273
+|     Date: Thu, 24 Jul 2025 18:53:40 GMT
+|     <html><head>
+|     <meta http-equiv="content-type" content="text/html;charset=utf-8">
+|     <title>400 Bad Request</title>
+|     </head>
+|     <body text=#000000 bgcolor=#ffffff>
+|     <h1>Error: Bad Request</h1>
+|     <h2>Your client has issued a malformed or illegal request.</h2>
+|     <h2></h2>
+|_    </body></html>
+| ssl-cert: Subject: commonName=bm.paypal.com/organizationName=PayPal, Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:bm.paypal.com
+| Not valid before: 2024-06-14T00:00:00
+|_Not valid after:  2025-06-13T23:59:59
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=7/24%Time=6882812F%P=x86_64-pc-linux-
+SF:gnu%r(HTTPOptions,110,"HTTP/1\.0\x20404\x20Not\x20Found\r\ncontent-type
+SF::\x20text/html;\x20charset=utf-8\r\nContent-Length:\x2053\r\nx-response
+SF:-time:\x200ms\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:53:35\x20GMT\
+SF:r\nVia:\x201\.1\x20google\r\nAlt-Svc:\x20h3=\":443\";\x20ma=2592000,h3-
+SF:29=\":443\";\x20ma=2592000\r\n\r\n<html><body><h1>Resource\x20not\x20fo
+SF:und</h1></body></html>")%r(RTSPRequest,1AD,"HTTP/1\.0\x20400\x20Bad\x20
+SF:Request\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nReferrer-Pol
+SF:icy:\x20no-referrer\r\nContent-Length:\x20273\r\nDate:\x20Thu,\x2024\x2
+SF:0Jul\x202025\x2018:53:40\x20GMT\r\n\r\n\n<html><head>\n<meta\x20http-eq
+SF:uiv=\"content-type\"\x20content=\"text/html;charset=utf-8\">\n<title>40
+SF:0\x20Bad\x20Request</title>\n</head>\n<body\x20text=#000000\x20bgcolor=
+SF:#ffffff>\n<h1>Error:\x20Bad\x20Request</h1>\n<h2>Your\x20client\x20has\
+SF:x20issued\x20a\x20malformed\x20or\x20illegal\x20request\.</h2>\n<h2></h
+SF:2>\n</body></html>\n")%r(DNSStatusRequestTCP,B3,"HTTP/1\.0\x20400\x20Ba
+SF:d\x20Request\r\nContent-Length:\x2054\r\nContent-Type:\x20text/html;\x2
+SF:0charset=UTF-8\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:53:45\x20GMT
+SF:\r\n\r\n<html><title>Error\x20400\x20\(Bad\x20Request\)!!1</title></htm
+SF:l>")%r(Help,1AD,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x2
+SF:0text/html;\x20charset=UTF-8\r\nReferrer-Policy:\x20no-referrer\r\nCont
+SF:ent-Length:\x20273\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:53:45\x2
+SF:0GMT\r\n\r\n\n<html><head>\n<meta\x20http-equiv=\"content-type\"\x20con
+SF:tent=\"text/html;charset=utf-8\">\n<title>400\x20Bad\x20Request</title>
+SF:\n</head>\n<body\x20text=#000000\x20bgcolor=#ffffff>\n<h1>Error:\x20Bad
+SF:\x20Request</h1>\n<h2>Your\x20client\x20has\x20issued\x20a\x20malformed
+SF:\x20or\x20illegal\x20request\.</h2>\n<h2></h2>\n</body></html>\n")%r(SS
+SF:LSessionReq,B3,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Length:\x
+SF:2054\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nDate:\x20Thu,\x
+SF:2024\x20Jul\x202025\x2018:53:45\x20GMT\r\n\r\n<html><title>Error\x20400
+SF:\x20\(Bad\x20Request\)!!1</title></html>");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 75.23 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:54 UTC
+Nmap done: 0 IP addresses (0 hosts up) scanned in 0.31 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:54 UTC
+Nmap scan report for server-13-227-249-91.bom78.r.cloudfront.net (13.227.249.91)
+Host is up (0.0039s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      Amazon CloudFront httpd
+|_http-server-header: CloudFront
+|_http-title: ERROR: The request could not be satisfied
+443/tcp open  ssl/https CloudFront
+|_http-server-header: CloudFront
+|_http-title: ERROR: The request could not be satisfied
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 17.43 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:54 UTC
