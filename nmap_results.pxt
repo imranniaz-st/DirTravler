@@ -213,3 +213,101 @@ Nmap done: 1 IP address (1 host up) scanned in 173.02 seconds
 -----------------------------
 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:10 UTC
+Nmap scan report for 20.70.246.20
+Host is up (0.15s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      Kestrel
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 500 Internal Server Error
+|     Content-Length: 0
+|     Connection: close
+|     Date: Thu, 24 Jul 2025 18:10:34 GMT
+|     Server: Kestrel
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 500 Internal Server Error
+|     Content-Length: 0
+|     Connection: close
+|     Date: Thu, 24 Jul 2025 18:10:28 GMT
+|     Server: Kestrel
+|   Help, SSLSessionReq: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Length: 0
+|     Connection: close
+|     Date: Thu, 24 Jul 2025 18:10:55 GMT
+|     Server: Kestrel
+|   Kerberos: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Length: 0
+|     Connection: close
+|     Date: Thu, 24 Jul 2025 18:10:57 GMT
+|     Server: Kestrel
+|   LDAPSearchReq, LPDString: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Length: 0
+|     Connection: close
+|     Date: Thu, 24 Jul 2025 18:11:02 GMT
+|     Server: Kestrel
+|   RTSPRequest: 
+|     HTTP/1.1 505 HTTP Version Not Supported
+|     Content-Length: 0
+|     Connection: close
+|     Date: Thu, 24 Jul 2025 18:10:29 GMT
+|     Server: Kestrel
+|   TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Length: 0
+|     Connection: close
+|     Date: Thu, 24 Jul 2025 18:10:56 GMT
+|_    Server: Kestrel
+|_http-server-header: Kestrel
+|_http-title: Site doesn't have a title.
+443/tcp open  ssl/https Kestrel
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=reroute443.microsoft.com/organizationName=Microsoft Corporation/stateOrProvinceName=WA/countryName=US
+| Subject Alternative Name: DNS:reroute443.microsoft.com
+| Not valid before: 2025-06-26T05:59:53
+|_Not valid after:  2025-12-23T05:59:53
+|_http-title: Site doesn't have a title.
+|_http-server-header: Kestrel
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.94SVN%I=7%D=7/24%Time=68827714%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,82,"HTTP/1\.1\x20500\x20Internal\x20Server\x20Error\r\nConten
+SF:t-Length:\x200\r\nConnection:\x20close\r\nDate:\x20Thu,\x2024\x20Jul\x2
+SF:02025\x2018:10:28\x20GMT\r\nServer:\x20Kestrel\r\n\r\n")%r(HTTPOptions,
+SF:82,"HTTP/1\.1\x20500\x20Internal\x20Server\x20Error\r\nContent-Length:\
+SF:x200\r\nConnection:\x20close\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x201
+SF:8:10:28\x20GMT\r\nServer:\x20Kestrel\r\n\r\n")%r(RTSPRequest,87,"HTTP/1
+SF:\.1\x20505\x20HTTP\x20Version\x20Not\x20Supported\r\nContent-Length:\x2
+SF:00\r\nConnection:\x20close\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:
+SF:10:29\x20GMT\r\nServer:\x20Kestrel\r\n\r\n")%r(FourOhFourRequest,82,"HT
+SF:TP/1\.1\x20500\x20Internal\x20Server\x20Error\r\nContent-Length:\x200\r
+SF:\nConnection:\x20close\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:10:3
+SF:4\x20GMT\r\nServer:\x20Kestrel\r\n\r\n")%r(Help,78,"HTTP/1\.1\x20400\x2
+SF:0Bad\x20Request\r\nContent-Length:\x200\r\nConnection:\x20close\r\nDate
+SF::\x20Thu,\x2024\x20Jul\x202025\x2018:10:55\x20GMT\r\nServer:\x20Kestrel
+SF:\r\n\r\n")%r(SSLSessionReq,78,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:ntent-Length:\x200\r\nConnection:\x20close\r\nDate:\x20Thu,\x2024\x20Ju
+SF:l\x202025\x2018:10:55\x20GMT\r\nServer:\x20Kestrel\r\n\r\n")%r(Terminal
+SF:ServerCookie,78,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Length:\
+SF:x200\r\nConnection:\x20close\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x201
+SF:8:10:56\x20GMT\r\nServer:\x20Kestrel\r\n\r\n")%r(TLSSessionReq,78,"HTTP
+SF:/1\.1\x20400\x20Bad\x20Request\r\nContent-Length:\x200\r\nConnection:\x
+SF:20close\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:10:56\x20GMT\r\nSer
+SF:ver:\x20Kestrel\r\n\r\n")%r(Kerberos,78,"HTTP/1\.1\x20400\x20Bad\x20Req
+SF:uest\r\nContent-Length:\x200\r\nConnection:\x20close\r\nDate:\x20Thu,\x
+SF:2024\x20Jul\x202025\x2018:10:57\x20GMT\r\nServer:\x20Kestrel\r\n\r\n")%
+SF:r(LPDString,78,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Length:\x
+SF:200\r\nConnection:\x20close\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018
+SF::11:02\x20GMT\r\nServer:\x20Kestrel\r\n\r\n")%r(LDAPSearchReq,78,"HTTP/
+SF:1\.1\x20400\x20Bad\x20Request\r\nContent-Length:\x200\r\nConnection:\x2
+SF:0close\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:11:02\x20GMT\r\nServ
+SF:er:\x20Kestrel\r\n\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 144.83 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:12 UTC
