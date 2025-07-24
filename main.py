@@ -13,7 +13,8 @@ file_path = sys.argv[1]
 skip_patterns = re.compile(
     r'\.(?:jpg|jpeg|png|gif|webp|bmp|svg|css|woff2?|ttf|eot|mp3|mp4|webm|avi|mov|wav|m4a)$'
     r'|/(?:node_modules|\.git|\.github|vendor|\.idea|\.vscode|__MACOSX)(/|$)'
-    r'|\.git(ignore|config|modules|keep)?$',
+    r'|\.git(ignore|config|modules|keep)?$'
+    r'|\?C=[A-Z];O=[A-Z]',  # Also skip Apache-style sort links
     re.IGNORECASE
 )
 
@@ -26,9 +27,7 @@ def filter_and_dedupe(file_path):
             cleaned_lines = []
             for line in lines:
                 line = line.strip()
-                if not line:
-                    continue
-                if skip_patterns.search(line):
+                if not line or skip_patterns.search(line):
                     continue
                 if line not in seen:
                     seen.add(line)
@@ -43,7 +42,7 @@ def filter_and_dedupe(file_path):
         print(f"[-] Error: {e}")
 
 if __name__ == "__main__":
-    print(f"🔁 Watching file: {file_path} — Running cleanup every 10s...")
+    print(f"🔁 Watching file: {file_path} — Running cleanup every 20s...")
     while True:
         filter_and_dedupe(file_path)
         time.sleep(20)
