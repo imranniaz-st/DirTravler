@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # === CONFIG ===
-DOMAIN_FILE="domains.txt"
+DOMAIN_FILE="domain.txt"
 SUBS_FILE="subdomains.txt"
 RESOLVED_FILE="resolved.txt"
 MASSCAN_OUT="masscan_output.txt"
