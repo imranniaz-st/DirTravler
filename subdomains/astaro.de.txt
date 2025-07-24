@@ -1,0 +1,12 @@
+blog.astaro.de
+vpn.astaro.de
+drupal.intranet.astaro.de
+survey-emea.astaro.de
+w.astaro.de
+www.astaro.de
+ftp-exchange.astaro.de
+download.astaro.de
+mantis.intranet.astaro.de
+ftp.astaro.de
+ftp2.astaro.de
+download2.astaro.de
