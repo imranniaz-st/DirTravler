@@ -340,3 +340,166 @@
     ".git/config (301)"
   ]
 }
+{
+  "ip": "ssp.paypal.com",
+  "http_status": "",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp filtered 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp filtered 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp filtered 8080/tcp filtered",
+  "server_header": "",
+  "ssl_issuer": "",
+  "ssl_expiry": "",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "c.paypal.com",
+  "http_status": "404",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp filtered 8080/tcp filtered",
+  "server_header": "",
+  "ssl_issuer": "C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 Extended Validation Server CA",
+  "ssl_expiry": "Jan  9 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "secure.paypal.com",
+  "http_status": "",
+  "open_ports": "",
+  "server_header": "",
+  "ssl_issuer": "",
+  "ssl_expiry": "",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "us.paypal-qrc-seller-supplies.com",
+  "http_status": "301",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp filtered 8080/tcp filtered",
+  "server_header": "",
+  "ssl_issuer": "C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 Extended Validation Server CA",
+  "ssl_expiry": "Jan  9 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    "admin (301)",
+    "login (301)",
+    "dashboard (301)",
+    "config (301)",
+    "backup (301)",
+    "phpinfo.php (301)",
+    "server-status (301)"
+  ]
+}
+{
+  "ip": "articles.braintreepayments.com",
+  "http_status": "302",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp filtered 8080/tcp filtered",
+  "server_header": "",
+  "ssl_issuer": "C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 Extended Validation Server CA",
+  "ssl_expiry": "Jan  9 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    "admin (302)",
+    "login (302)",
+    "dashboard (302)",
+    "config (302)",
+    "backup (302)",
+    "phpinfo.php (302)",
+    "server-status (302)"
+  ]
+}
+{
+  "ip": "www.paypalobjects.com",
+  "http_status": "403",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp filtered 8080/tcp filtered",
+  "server_header": "Varnish\r",
+  "ssl_issuer": "",
+  "ssl_expiry": "",
+  "technologies": "",
+  "interesting_directories": [
+    "admin (301)",
+    "login (301)",
+    "dashboard (301)",
+    "config (301)",
+    "backup (301)",
+    "phpinfo.php (301)",
+    "server-status (301)",
+    ".git/config (301)"
+  ]
+}
+{
+  "ip": "creditapply.paypal.com",
+  "http_status": "301",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp filtered 8080/tcp filtered",
+  "server_header": "",
+  "ssl_issuer": "C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 Extended Validation Server CA",
+  "ssl_expiry": "Jan  9 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    "admin (301)",
+    "login (301)",
+    "dashboard (301)",
+    "config (301)",
+    "backup (301)",
+    "phpinfo.php (301)",
+    "server-status (301)"
+  ]
+}
+{
+  "ip": "pp-us.paypal.com",
+  "http_status": "",
+  "open_ports": "",
+  "server_header": "",
+  "ssl_issuer": "",
+  "ssl_expiry": "",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "mobile.paypal.com",
+  "http_status": "",
+  "open_ports": "",
+  "server_header": "",
+  "ssl_issuer": "",
+  "ssl_expiry": "",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "www.paypal.biz",
+  "http_status": "302",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp filtered 8080/tcp filtered",
+  "server_header": "",
+  "ssl_issuer": "C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 Extended Validation Server CA",
+  "ssl_expiry": "Jan  9 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    "admin (302)",
+    "login (302)",
+    "dashboard (302)",
+    "config (302)",
+    "backup (302)",
+    "phpinfo.php (302)",
+    "server-status (302)"
+  ]
+}
+{
+  "ip": "js.braintreegateway.com",
+  "http_status": "403",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp filtered 8080/tcp open",
+  "server_header": "cloudflare\r",
+  "ssl_issuer": "C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 Extended Validation Server CA",
+  "ssl_expiry": "Jan  9 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
