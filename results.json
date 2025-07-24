@@ -1472,3 +1472,22 @@
     ""
   ]
 }
+{
+  "ip": "openssh.com",
+  "http_status": "301",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp closed 53/tcp closed 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp filtered 8080/tcp filtered",
+  "server_header": "OpenBSD httpd\r",
+  "ssl_issuer": "C = US, O = Let's Encrypt, CN = R11",
+  "ssl_expiry": "Sep  3 15:45:34 2025 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    "admin (301)",
+    "login (301)",
+    "dashboard (301)",
+    "config (301)",
+    "backup (301)",
+    "phpinfo.php (301)",
+    "server-status (301)",
+    ".git/config (301)"
+  ]
+}
