@@ -1,0 +1,15 @@
+doc.federacy.com
+honeypot.federacy.com
+two.federacy.com
+www.staging.api.federacy.com
+api.federacy.com
+app.federacy.com
+staging.api.federacy.com
+blog.federacy.com
+one.federacy.com
+testapi.federacy.com
+www.federacy.com
+www.honeypot.federacy.com
+www.app.federacy.com
+staging-2.federacy.com
+help.federacy.com
