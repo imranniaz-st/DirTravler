@@ -793,3 +793,142 @@ Nmap done: 1 IP address (1 host up) scanned in 192.05 seconds
 -----------------------------
 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:26 UTC
+Nmap scan report for 236.176.81.172.lunanode-rdns.com (172.81.176.236)
+Host is up (0.22s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE      VERSION
+443/tcp  open     ssl/https
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  h2
+|_http-title: 406 Not Acceptable
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 406 Not Acceptable
+|     Content-Type: text/html
+|     Content-Length: 156
+|     Connection: close
+|     Date: Thu, 24 Jul 2025 18:26:25 GMT
+|     Strict-Transport-Security: max-age=31536000; includeSubDomains
+|     <html>
+|     <head><title>406 Not Acceptable</title></head>
+|     <body>
+|     <center><h1>406 Not Acceptable</h1></center>
+|     <hr><center>nginx</center>
+|     </body>
+|     </html>
+|   GetRequest: 
+|     HTTP/1.1 400 Bad Request: missing required Host header
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Date: Thu, 24 Jul 2025 18:26:22 GMT
+|     Strict-Transport-Security: max-age=31536000; includeSubDomains
+|     Request: missing required Host header
+|   HTTPOptions: 
+|     HTTP/1.1 400 Bad Request: missing required Host header
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Date: Thu, 24 Jul 2025 18:26:24 GMT
+|     Strict-Transport-Security: max-age=31536000; includeSubDomains
+|     Request: missing required Host header
+|   tor-versions: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/html
+|     Content-Length: 3972
+|     Connection: close
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <title>400 Error - Message</title>
+|     <meta content="description" name="Error Page" />
+|     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+|     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+|     <style>
+|     html {
+|     height: 100%;
+|     display: block;
+|     body {
+|     margin: 0;
+|     padding: 0;
+|     min-width: 768px;
+|     font-size: 14px;
+|     font-weight: 300;
+|     line-height: 1.231;
+|     font-family: brandon_text, "Open Sans", sans-serif;
+|     display: inline-block;
+|     box-sizing: border-box;
+|_    .error-page {
+| ssl-cert: Subject: commonName=api.paypal.com/organizationName=PayPal, Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:api.paypal.com, DNS:api-3t.paypal.com, DNS:uptycshon.paypal.com, DNS:svcs.paypal.com, DNS:pointofsale.paypal.com, DNS:uptycsize.paypal.com, DNS:payflowpro.paypal.com, DNS:pointofsale-s.paypal.com, DNS:adjvendor.paypal.com, DNS:api-aa-3t.paypal.com, DNS:uptycshap.paypal.com, DNS:uptycsven.paypal.com, DNS:zootapi.paypal.com, DNS:uptycsbrt.paypal.com, DNS:api-aa.paypal.com, DNS:a.paypal.com, DNS:pilot-payflowpro.paypal.com, DNS:uptycspay.paypal.com, DNS:api-m.paypal.com
+| Not valid before: 2025-03-13T00:00:00
+|_Not valid after:  2026-04-13T23:59:59
+445/tcp  filtered microsoft-ds
+3306/tcp open     mysql        MySQL 8.0.42-0ubuntu0.22.04.1
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=MySQL_Server_8.0.31_Auto_Generated_Server_Certificate
+| Not valid before: 2023-01-08T00:31:32
+|_Not valid after:  2033-01-05T00:31:32
+| mysql-info: 
+|   Protocol: 10
+|   Version: 8.0.42-0ubuntu0.22.04.1
+|   Thread ID: 484221
+|   Capabilities flags: 65535
+|   Some Capabilities: ConnectWithDatabase, Support41Auth, IgnoreSigpipes, IgnoreSpaceBeforeParenthesis, SupportsTransactions, SwitchToSSLAfterHandshake, DontAllowDatabaseTableColumn, LongColumnFlag, Speaks41ProtocolNew, Speaks41ProtocolOld, FoundRows, ODBCClient, SupportsLoadDataLocal, SupportsCompression, LongPassword, InteractiveClient, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: BcBH	\x172)AG\x19*\x18=nM*\x03;i
+|_  Auth Plugin Name: mysql_native_password
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=7/24%Time=68827ACE%P=x86_64-pc-linux-
+SF:gnu%r(GetRequest,108,"HTTP/1\.1\x20400\x20Bad\x20Request:\x20missing\x2
+SF:0required\x20Host\x20header\r\nContent-Type:\x20text/plain;\x20charset=
+SF:utf-8\r\nConnection:\x20close\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x20
+SF:18:26:22\x20GMT\r\nStrict-Transport-Security:\x20max-age=31536000;\x20i
+SF:ncludeSubDomains\r\n\r\n400\x20Bad\x20Request:\x20missing\x20required\x
+SF:20Host\x20header")%r(HTTPOptions,108,"HTTP/1\.1\x20400\x20Bad\x20Reques
+SF:t:\x20missing\x20required\x20Host\x20header\r\nContent-Type:\x20text/pl
+SF:ain;\x20charset=utf-8\r\nConnection:\x20close\r\nDate:\x20Thu,\x2024\x2
+SF:0Jul\x202025\x2018:26:24\x20GMT\r\nStrict-Transport-Security:\x20max-ag
+SF:e=31536000;\x20includeSubDomains\r\n\r\n400\x20Bad\x20Request:\x20missi
+SF:ng\x20required\x20Host\x20header")%r(FourOhFourRequest,161,"HTTP/1\.1\x
+SF:20406\x20Not\x20Acceptable\r\nContent-Type:\x20text/html\r\nContent-Len
+SF:gth:\x20156\r\nConnection:\x20close\r\nDate:\x20Thu,\x2024\x20Jul\x2020
+SF:25\x2018:26:25\x20GMT\r\nStrict-Transport-Security:\x20max-age=31536000
+SF:;\x20includeSubDomains\r\n\r\n<html>\r\n<head><title>406\x20Not\x20Acce
+SF:ptable</title></head>\r\n<body>\r\n<center><h1>406\x20Not\x20Acceptable
+SF:</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+SF:)%r(tor-versions,FE2,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Typ
+SF:e:\x20text/html\r\nContent-Length:\x203972\r\nConnection:\x20close\r\n\
+SF:r\n<!DOCTYPE\x20html>\n<html>\n\n<head>\n\x20\x20\x20\x20<title>400\x20
+SF:Error\x20-\x20Message</title>\n\x20\x20\x20\x20<meta\x20content=\"descr
+SF:iption\"\x20name=\"Error\x20Page\"\x20/>\n\x20\x20\x20\x20<meta\x20cont
+SF:ent=\"IE=edge,chrome=1\"\x20http-equiv=\"X-UA-Compatible\"\x20/>\n\x20\
+SF:x20\x20\x20<meta\x20content=\"width=device-width,\x20initial-scale=1,\x
+SF:20maximum-scale=1,\x20user-scalable=no\"\x20name=\"viewport\"\x20/>\n\x
+SF:20\x20\x20\x20<style>\n\x20\x20\x20\x20\x20\x20\x20\x20html\x20{\n\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\n\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block;\n\x20\x20\x20\
+SF:x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20\n\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20body\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20margin:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pad
+SF:ding:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20min-width:
+SF:\x20768px;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\
+SF:x2014px;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\
+SF:x20300;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x
+SF:201\.231;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:
+SF:\x20brandon_text,\x20\"Open\x20Sans\",\x20sans-serif;\n\x20\x20\x20\x20
+SF:\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20\n\x20\x20\x20\x20\x
+SF:20\x20\x20\x20div\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0display:\x20inline-block;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20box-sizing:\x20border-box;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\n\x20\x20\x20\x20\x20\x20\x20\x20\.error-
+SF:page\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 105.11 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:27 UTC

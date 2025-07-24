@@ -1,23 +1,23 @@
 #!/bin/bash
 
-# Create output directory if it doesn't exist
+# Output directory
 mkdir -p reports
 
-# Read each domain line-by-line
-while read -r url; do
-    if [[ -z "$url" ]]; then
+# Loop through each domain in domain.txt
+while read -r domain; do
+    if [[ -z "$domain" ]]; then
         continue
     fi
 
-    echo "======================================================"
-    echo "[*] Starting scan for $url"
+    echo "🔍 Scanning: $domain"
     
-    # Clean domain name for filename
-    domain_name=$(echo "$url" | sed 's|https\?://||' | tr '/:' '_')
+    # Clean filename
+    safe_name=$(echo "$domain" | sed 's|https\?://||g' | tr '/:' '_')
 
-    # Run dirsearch and wait for it to finish before the next
-    python3 /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u "$url" -e php,html,js,txt -x 403,404,500 -t 50 > "reports/${domain_name}.txt"
+    # Run dirsearch
+    dirsearch -u "$domain" -e txt,py,html,json -o "reports/${safe_name}.txt"
 
-    echo "[✔] Completed scan for $url → reports/${domain_name}.txt"
-    echo "======================================================"
+    echo "✅ Finished: $domain → reports/${safe_name}.txt"
+    echo "-----------------------------------------------"
+
 done < domain.txt
