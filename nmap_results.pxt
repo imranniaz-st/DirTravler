@@ -1004,3 +1004,69 @@ Nmap done: 1 IP address (1 host up) scanned in 22.52 seconds
 -----------------------------
 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:40 UTC
+Nmap scan report for xeroday.paypal.com (205.185.127.166)
+Host is up (0.23s latency).
+Not shown: 995 closed tcp ports (conn-refused)
+PORT    STATE    SERVICE        VERSION
+22/tcp  open     ssh            OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 f2:e9:13:b6:7c:c6:cd:bd:d4:09:7b:f8:a1:23:d7:4a (RSA)
+|   256 1a:10:07:cd:05:e9:b6:dc:b7:4f:07:ed:f3:9a:61:1f (ECDSA)
+|_  256 75:1e:2f:e9:1e:c8:6c:67:fc:7a:a6:ff:dc:c3:9a:dc (ED25519)
+25/tcp  filtered smtp
+443/tcp open     ssl/tcpwrapped
+| ssl-cert: Subject: commonName=f.vacum.cn
+| Subject Alternative Name: DNS:f.vacum.cn
+| Not valid before: 2025-07-24T02:04:17
+|_Not valid after:  2025-10-22T02:04:16
+|_http-title: 403 Forbidden
+|_http-server-header: nginx/1.25.0
+465/tcp filtered smtps
+587/tcp filtered submission
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 25.08 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:40 UTC
+Nmap scan report for kalgan.badcode.be (195.15.245.142)
+Host is up (0.16s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 6b:f4:c9:ea:8e:70:0a:f0:86:ac:c7:86:78:66:ea:4b (ECDSA)
+|_  256 a1:ad:70:de:93:d1:06:44:38:04:a6:ee:08:1b:9a:92 (ED25519)
+25/tcp  open  smtp     Postfix smtpd
+|_ssl-date: TLS randomness does not represent time
+|_smtp-commands: kalgan.badcode.be, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8, CHUNKING
+| ssl-cert: Subject: commonName=anacreon.badcode.be
+| Subject Alternative Name: DNS:anacreon.badcode.be
+| Not valid before: 2023-11-10T22:16:47
+|_Not valid after:  2024-02-08T22:16:46
+80/tcp  open  http     nginx 1.25.4
+|_http-server-header: nginx/1.25.4
+|_http-title: Did not follow redirect to https://archive.libssh.org//
+443/tcp open  ssl/http nginx 1.25.4
+|_http-server-header: nginx/1.25.4
+|_http-title: Mailing Lists
+| ssl-cert: Subject: commonName=archive.libssh.org
+| Subject Alternative Name: DNS:archive.libssh.org
+| Not valid before: 2025-05-20T19:56:25
+|_Not valid after:  2025-08-18T19:56:24
+Service Info: Host:  kalgan.badcode.be; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 31.18 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:41 UTC
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 2.29 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:41 UTC
