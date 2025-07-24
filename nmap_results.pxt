@@ -932,3 +932,18 @@ Nmap done: 1 IP address (1 host up) scanned in 105.11 seconds
 -----------------------------
 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:27 UTC
+Nmap scan report for cloudmonitor-splf5.ccg14.slc.paypal.com (173.0.82.242)
+Host is up (0.24s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE         VERSION
+443/tcp   open     ssl/https?
+8088/tcp  open     ssl/radan-http?
+16992/tcp filtered amt-soap-http
+16993/tcp filtered amt-soap-https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 135.71 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:30 UTC
