@@ -37,10 +37,8 @@ crawl() {
         mapfile -t links < <(extract_links "$content")
 
         for link in "${links[@]}"; do
-            # Ignore Parent directory link
             [[ "$link" == "../" || "$link" == "/" ]] && continue
 
-            # Absolute or relative
             if [[ "$link" =~ ^https?:// ]]; then
                 next="$link"
             elif [[ "$link" =~ ^/ ]]; then
@@ -53,7 +51,6 @@ crawl() {
 
             next=$(normalize_url "$next")
 
-            # Continue recursion for folders (ends with /)
             if [[ "$next" =~ /$ ]]; then
                 crawl "$next"
             else
@@ -64,11 +61,23 @@ crawl() {
     fi
 }
 
-# Entry
-if [[ -z "$1" ]]; then
-    echo "Usage: $0 <start-url>"
+# === Modified Section to read from txt file ===
+
+if [[ -z "$1" || ! -f "$1" ]]; then
+    echo "Usage: $0 <targets.txt>"
     exit 1
 fi
 
 rm -f found.txt found_files.txt
-crawl "$1"
+
+while IFS= read -r target; do
+    target=$(echo "$target" | xargs)  # Trim spaces
+    [[ -z "$target" ]] && continue
+
+    # Add http:// if not present
+    if [[ ! "$target" =~ ^https?:// ]]; then
+        target="http://$target"
+    fi
+
+    crawl "$target"
+done < "$1"
