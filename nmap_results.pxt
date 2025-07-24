@@ -1,1 +1,215 @@
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:07 UTC
+Nmap scan report for api.sandbox.paypal.com (173.0.93.199)
+Host is up (0.36s latency).
+Not shown: 542 filtered tcp ports (no-response), 456 closed tcp ports (conn-refused)
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http
+|_http-title: Did not follow redirect to https://api.sandbox.paypal.com/
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 302 Moved Temporarily
+|     Content-Type: text/html
+|     Content-Length: 161
+|     Connection: close
+|     Location: https:///
+|     <html>
+|     <head><title>302 Found</title></head>
+|     <body bgcolor="white">
+|     <center><h1>302 Found</h1></center>
+|     <hr><center>Avi Vantage/</center>
+|     </body>
+|     </html>
+|   RTSPRequest: 
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <title>400 Error - Message</title>
+|     <meta content="description" name="Error Page" />
+|     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+|     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+|     <style>
+|     html {
+|     height: 100%;
+|     display: block;
+|     body {
+|     margin: 0;
+|     padding: 0;
+|     min-width: 768px;
+|     font-size: 14px;
+|     font-weight: 300;
+|     line-height: 1.231;
+|     font-family: brandon_text, "Open Sans", sans-serif;
+|     display: inline-block;
+|     box-sizing: border-box;
+|     .error-page {
+|     position: fixed;
+|     top: 0;
+|     bottom: 0;
+|_    left: 0;
+443/tcp open  ssl/https
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/html
+|     Content-Length: 3907
+|     Connection: close
+|     Date: Thu, 24 Jul 2025 18:08:55 GMT
+|     Strict-Transport-Security: max-age=31536000; includeSubDomains
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <title>400 Error - Message</title>
+|     <meta content="description" name="Error Page" />
+|     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+|     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+|     <style>
+|     html {
+|     height: 100%;
+|     display: block;
+|     body {
+|     margin: 0;
+|     padding: 0;
+|     min-width: 768px;
+|     font-size: 14px;
+|     font-weight: 300;
+|     line-height: 1.231;
+|     font-family: brandon_text, "Open Sans", sans-serif;
+|     display: in
+|   HTTPOptions: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/html
+|     Content-Length: 3906
+|     Connection: close
+|     Date: Thu, 24 Jul 2025 18:08:57 GMT
+|     Strict-Transport-Security: max-age=31536000; includeSubDomains
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <title>400 Error - Message</title>
+|     <meta content="description" name="Error Page" />
+|     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+|     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+|     <style>
+|     html {
+|     height: 100%;
+|     display: block;
+|     body {
+|     margin: 0;
+|     padding: 0;
+|     min-width: 768px;
+|     font-size: 14px;
+|     font-weight: 300;
+|     line-height: 1.231;
+|     font-family: brandon_text, "Open Sans", sans-serif;
+|_    display: in
+|_http-title: 400 Error - Message
+| ssl-cert: Subject: commonName=api.sandbox.paypal.com/organizationName=PayPal, Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:api.sandbox.paypal.com, DNS:api-3t-v2.sandbox.paypal.com, DNS:api-3t.sandbox.paypal.com, DNS:api-aa-3t-v2.sandbox.paypal.com, DNS:api-aa-3t.sandbox.paypal.com, DNS:api-aa-v2.sandbox.paypal.com, DNS:api-aa.sandbox.paypal.com, DNS:api-v1.sandbox.paypal.com, DNS:api-v2.sandbox.paypal.com, DNS:ipnpb.sandbox.paypal.com, DNS:paypalmanager.sandbox.paypal.com, DNS:pointofsale.sandbox.paypal.com, DNS:svcs-v2.sandbox.paypal.com, DNS:svcs.sandbox.paypal.com
+| Not valid before: 2025-07-18T00:00:00
+|_Not valid after:  2026-07-17T23:59:59
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.94SVN%I=7%D=7/24%Time=688276B0%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,119,"HTTP/1\.1\x20302\x20Moved\x20Temporarily\r\nContent-Type
+SF::\x20text/html\r\nContent-Length:\x20161\r\nConnection:\x20close\r\nLoc
+SF:ation:\x20https:///\r\n\r\n<html>\r\n<head><title>302\x20Found</title><
+SF:/head>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>302\x20Found</h1><
+SF:/center>\r\n<hr><center>Avi\x20Vantage/</center>\r\n</body>\r\n</html>\
+SF:r\n")%r(HTTPOptions,119,"HTTP/1\.1\x20302\x20Moved\x20Temporarily\r\nCo
+SF:ntent-Type:\x20text/html\r\nContent-Length:\x20161\r\nConnection:\x20cl
+SF:ose\r\nLocation:\x20https:///\r\n\r\n<html>\r\n<head><title>302\x20Foun
+SF:d</title></head>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>302\x20F
+SF:ound</h1></center>\r\n<hr><center>Avi\x20Vantage/</center>\r\n</body>\r
+SF:\n</html>\r\n")%r(RTSPRequest,F8D,"<!DOCTYPE\x20html>\n<html>\n\n<head>
+SF:\n\x20\x20\x20\x20<title>400\x20Error\x20-\x20Message</title>\n\x20\x20
+SF:\x20\x20<meta\x20content=\"description\"\x20name=\"Error\x20Page\"\x20/
+SF:>\n\x20\x20\x20\x20<meta\x20content=\"IE=edge,chrome=1\"\x20http-equiv=
+SF:\"X-UA-Compatible\"\x20/>\n\x20\x20\x20\x20<meta\x20content=\"width=dev
+SF:ice-width,\x20initial-scale=1,\x20maximum-scale=1,\x20user-scalable=no\
+SF:"\x20name=\"viewport\"\x20/>\n\x20\x20\x20\x20<style>\n\x20\x20\x20\x20
+SF:\x20\x20\x20\x20html\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20height:\x20100%;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20d
+SF:isplay:\x20block;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\n\x20\x20\x20\x20\x20\x20\x20\x20body\x20{\n\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\n\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20padding:\x200;\n\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20min-width:\x20768px;\n\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20font-size:\x2014px;\n\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20font-weight:\x20300;\n\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20line-height:\x201\.231;\n\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20font-family:\x20brandon_text,\x20\"Open\x20Sans\",\
+SF:x20sans-serif;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\n\x20\x20\x20\x20\x20\x20\x20\x20div\x20{\n\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block;\n\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20box-sizing:\x20border-box;\n\x20\x
+SF:20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20\n\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\.error-page\x20{\n\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20position:\x20fixed;\n\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20top:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20bottom:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20l
+SF:eft:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20r");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=7/24%Time=688276B7%P=x86_64-pc-linux-
+SF:gnu%r(GetRequest,1006,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Ty
+SF:pe:\x20text/html\r\nContent-Length:\x203907\r\nConnection:\x20close\r\n
+SF:Date:\x20Thu,\x2024\x20Jul\x202025\x2018:08:55\x20GMT\r\nStrict-Transpo
+SF:rt-Security:\x20max-age=31536000;\x20includeSubDomains\r\n\r\n<!DOCTYPE
+SF:\x20html>\n<html>\n\n<head>\n\x20\x20\x20\x20<title>400\x20Error\x20-\x
+SF:20Message</title>\n\x20\x20\x20\x20<meta\x20content=\"description\"\x20
+SF:name=\"Error\x20Page\"\x20/>\n\x20\x20\x20\x20<meta\x20content=\"IE=edg
+SF:e,chrome=1\"\x20http-equiv=\"X-UA-Compatible\"\x20/>\n\x20\x20\x20\x20<
+SF:meta\x20content=\"width=device-width,\x20initial-scale=1,\x20maximum-sc
+SF:ale=1,\x20user-scalable=no\"\x20name=\"viewport\"\x20/>\n\x20\x20\x20\x
+SF:20<style>\n\x20\x20\x20\x20\x20\x20\x20\x20html\x20{\n\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\n\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20display:\x20block;\n\x20\x20\x20\x20\x20\x20\
+SF:x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20\n\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20body\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:
+SF:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200;\
+SF:n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20min-width:\x20768px;\n
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\n\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20300;\n\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201\.231;\n\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20brandon_
+SF:text,\x20\"Open\x20Sans\",\x20sans-serif;\n\x20\x20\x20\x20\x20\x20\x20
+SF:\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20\n\x20\x20\x20\x20\x20\x20\x20\x
+SF:20div\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x2
+SF:0in")%r(HTTPOptions,1005,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent
+SF:-Type:\x20text/html\r\nContent-Length:\x203906\r\nConnection:\x20close\
+SF:r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:08:57\x20GMT\r\nStrict-Tran
+SF:sport-Security:\x20max-age=31536000;\x20includeSubDomains\r\n\r\n<!DOCT
+SF:YPE\x20html>\n<html>\n\n<head>\n\x20\x20\x20\x20<title>400\x20Error\x20
+SF:-\x20Message</title>\n\x20\x20\x20\x20<meta\x20content=\"description\"\
+SF:x20name=\"Error\x20Page\"\x20/>\n\x20\x20\x20\x20<meta\x20content=\"IE=
+SF:edge,chrome=1\"\x20http-equiv=\"X-UA-Compatible\"\x20/>\n\x20\x20\x20\x
+SF:20<meta\x20content=\"width=device-width,\x20initial-scale=1,\x20maximum
+SF:-scale=1,\x20user-scalable=no\"\x20name=\"viewport\"\x20/>\n\x20\x20\x2
+SF:0\x20<style>\n\x20\x20\x20\x20\x20\x20\x20\x20html\x20{\n\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\n\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20display:\x20block;\n\x20\x20\x20\x20\x20\x
+SF:20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20\n\x20\x20\x20\x20\x20\x20
+SF:\x20\x20body\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20marg
+SF:in:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x20
+SF:0;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20min-width:\x20768px
+SF:;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\
+SF:n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20300;\n
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201\.231;
+SF:\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20brand
+SF:on_text,\x20\"Open\x20Sans\",\x20sans-serif;\n\x20\x20\x20\x20\x20\x20\
+SF:x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20\n\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20div\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:
+SF:\x20in");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 173.02 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:10 UTC
