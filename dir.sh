@@ -1,6 +1,9 @@
+#!/bin/bash
+
 mkdir -p reports
 
 while read -r url; do
     domain_name=$(echo "$url" | sed 's|https\?://||' | tr '/:' '_')
-    dirsearch -u "$url" -e php,html,js,txt -x 403,404,500 -t 50 --simple-report "reports/${domain_name}.txt"
+    echo "[*] Scanning $url"
+    dirsearch -u "$url" -e php,html,js,txt -x 403,404,500 -t 50 > "reports/${domain_name}.txt"
 done < domain.txt
