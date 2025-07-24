@@ -1,0 +1,7 @@
+polaris.alibabapictures.com
+mail.alibabapictures.com
+www.alibabapictures.com
+yunzhi.alibabapictures.com
+service.alibabapictures.com
+ir.alibabapictures.com
+pre-service.alibabapictures.com
