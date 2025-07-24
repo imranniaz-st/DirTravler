@@ -1,0 +1,14 @@
+{
+    "area":{
+        "10":{
+            "name":"鬼杀村",
+            "svrlist":"http://1.12.240.110:7000/server/list"
+        }
+    },
+    "serverUrl":"http://1.12.240.110:7000/server/list",
+    "noticeUrl":"http://1.12.240.110:7000/notice",
+    "checkWhite":"http://1.12.240.110:6001/api/check",
+    "reportUrl":"http://1.12.240.110:9000/api/",
+    "resUrl":"http://aygexqcdn.tunyouhy.com/resUpdate_005",
+    "whiteResUrl":"http://aygexqcdn.tunyouhy.com/resWhite_005"
+}
