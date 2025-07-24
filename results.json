@@ -1460,3 +1460,15 @@
     ""
   ]
 }
+{
+  "ip": "reports.sandbox.paypal.com",
+  "http_status": "",
+  "open_ports": "21/tcp filtered 22/tcp open 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp filtered 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp filtered 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp closed 8080/tcp closed",
+  "server_header": "",
+  "ssl_issuer": "",
+  "ssl_expiry": "",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
