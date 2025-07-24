@@ -966,3 +966,41 @@ Nmap done: 1 IP address (1 host up) scanned in 288.28 seconds
 -----------------------------
 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:34 UTC
+Nmap scan report for ccg13-origin-c.paypal.com (173.0.87.22)
+Host is up (0.25s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE        VERSION
+443/tcp   open     ssl/https?
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=edge.paypal.com/organizationName=PayPal, Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:edge.paypal.com
+| Not valid before: 2024-09-23T00:00:00
+|_Not valid after:  2025-09-22T23:59:59
+16992/tcp filtered amt-soap-http
+16993/tcp filtered amt-soap-https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 289.47 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:39 UTC
+Nmap scan report for a104-120-58-30.deploy.static.akamaitechnologies.com (104.120.58.30)
+Host is up (0.0050s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+|_http-title: Invalid URL
+443/tcp open  ssl/http AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+|_http-title: Invalid URL
+| ssl-cert: Subject: commonName=demdex.net/organizationName=Adobe Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:demdex.net, DNS:fast.sears.demdex.net, DNS:fast.ford.demdex.net, DNS:fast.mtvn.demdex.net, DNS:fast.aexp.demdex.net, DNS:fast.amc.demdex.net, DNS:swa.demdex.net, DNS:fast.swa.demdex.net
+| Not valid before: 2024-11-19T00:00:00
+|_Not valid after:  2025-12-20T23:59:59
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 22.52 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:40 UTC

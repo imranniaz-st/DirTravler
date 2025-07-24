@@ -968,3 +968,81 @@
     "server-status (301)"
   ]
 }
+{
+  "ip": "id.braintreegateway.com",
+  "http_status": "",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp filtered 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp filtered 8080/tcp filtered",
+  "server_header": "",
+  "ssl_issuer": "",
+  "ssl_expiry": "",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "securepayments.paypal.com",
+  "http_status": "302",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp filtered 8080/tcp filtered",
+  "server_header": "",
+  "ssl_issuer": "C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 Extended Validation Server CA",
+  "ssl_expiry": "Jan  9 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    "login (301)"
+  ]
+}
+{
+  "ip": "support.braintreepayments.com",
+  "http_status": "302",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp filtered 8080/tcp filtered",
+  "server_header": "",
+  "ssl_issuer": "C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 Extended Validation Server CA",
+  "ssl_expiry": "Jan  9 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    "admin (302)",
+    "login (302)",
+    "dashboard (302)",
+    "config (302)",
+    "backup (302)",
+    "phpinfo.php (302)",
+    "server-status (302)"
+  ]
+}
+{
+  "ip": "onboarding.paypal.com",
+  "http_status": "",
+  "open_ports": "",
+  "server_header": "",
+  "ssl_issuer": "",
+  "ssl_expiry": "",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "pp-au.paypal.com",
+  "http_status": "",
+  "open_ports": "",
+  "server_header": "",
+  "ssl_issuer": "",
+  "ssl_expiry": "",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "fastlane.paypal.com",
+  "http_status": "308",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp filtered 8080/tcp filtered",
+  "server_header": "",
+  "ssl_issuer": "C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 Extended Validation Server CA",
+  "ssl_expiry": "Jan  9 23:59:59 2026 GMT",
+  "technologies": "",
+  "interesting_directories": [
+    "login (200)"
+  ]
+}
