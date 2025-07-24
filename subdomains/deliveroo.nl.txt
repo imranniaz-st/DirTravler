@@ -1,0 +1,15 @@
+admin.deliveroo.nl
+verpakkingen.deliveroo.nl
+staging.deliveroo.nl
+cdn3.deliveroo.nl
+bestelling.deliveroo.nl
+foodscene.deliveroo.nl
+packaging.deliveroo.nl
+test.deliveroo.nl
+dtm.deliveroo.nl
+sandbox.deliveroo.nl
+www.deliveroo.nl
+bestelling-staging.deliveroo.nl
+rider.deliveroo.nl
+careers.deliveroo.nl
+riders.deliveroo.nl
