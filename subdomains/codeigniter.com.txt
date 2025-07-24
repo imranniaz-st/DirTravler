@@ -1,0 +1,8 @@
+dc-3ac29ce0b486.codeigniter.com
+forum.codeigniter.com
+ftp.codeigniter.com
+mail.codeigniter.com
+forum2.codeigniter.com
+website2.codeigniter.com
+shield.codeigniter.com
+www.codeigniter.com
