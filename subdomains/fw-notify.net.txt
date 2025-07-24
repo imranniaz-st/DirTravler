@@ -1,0 +1,8 @@
+up2date3.fw-notify.net
+passthrough6.fw-notify.net
+deadmail.fw-notify.net
+passthrough.fw-notify.net
+fetcher.fw-notify.net
+downloader.fw-notify.net
+status.fw-notify.net
+up2date2.fw-notify.net
