@@ -1,6 +1,5 @@
 http://1.12.240.110/admin_init.sh
 http://1.12.240.110/p23.json
-http://100.26.103.107/.gitignore
 http://100.26.103.107/LICENSE.md
 http://100.26.103.107/README.md
 http://100.26.103.107/app/controllers/clickController.client.js
@@ -17,14 +16,11 @@ http://100.26.111.67/baobab/.env
 http://100.26.111.67/baobab/.env.dev
 http://100.26.111.67/baobab/.env.save
 http://100.26.111.67/baobab/.env.test
-http://100.26.111.67/baobab/.github/workflows/fly-deploy.yml
-http://100.26.111.67/baobab/.gitignore
 http://100.26.111.67/baobab/assets/app.js
 http://100.26.111.67/baobab/assets/bootstrap.js
 http://100.26.111.67/baobab/assets/controllers.json
 http://100.26.111.67/baobab/assets/controllers/csrf_protection_controller.js
 http://100.26.111.67/baobab/assets/controllers/hello_controller.js
-http://100.26.111.67/baobab/assets/styles/app.css
 http://100.26.111.67/baobab/bin/console
 http://100.26.111.67/baobab/bin/phpunit
 http://100.26.111.67/baobab/composer.json
@@ -58,12 +54,10 @@ http://100.26.111.67/baobab/config/routes/security.yaml
 http://100.26.111.67/baobab/config/routes/web_profiler.yaml
 http://100.26.111.67/baobab/config/services.yaml
 http://100.26.111.67/baobab/importmap.php
-http://100.26.111.67/baobab/migrations/.gitignore
 http://100.26.111.67/baobab/migrations/Version20250406084746.php
 http://100.26.111.67/baobab/package-lock.json
 http://100.26.111.67/baobab/package.json
 http://100.26.111.67/baobab/phpunit.xml.dist
-http://100.26.111.67/baobab/src/Controller/.gitignore
 http://100.26.111.67/baobab/src/Controller/ApplicationController.php
 http://100.26.111.67/baobab/src/Controller/CategoryController.php
 http://100.26.111.67/baobab/src/Controller/ConsultantController.php
@@ -79,7 +73,6 @@ http://100.26.111.67/baobab/src/Controller/SecurityController.php
 http://100.26.111.67/baobab/src/Controller/UnsolicitedController.php
 http://100.26.111.67/baobab/src/Controller/UserController.php
 http://100.26.111.67/baobab/src/Controller/VacancyController.php
-http://100.26.111.67/baobab/src/Entity/.gitignore
 http://100.26.111.67/baobab/src/Entity/Application.php
 http://100.26.111.67/baobab/src/Entity/Category.php
 http://100.26.111.67/baobab/src/Entity/Consultant.php
@@ -105,7 +98,6 @@ http://100.26.111.67/baobab/src/Form/UserType.php
 http://100.26.111.67/baobab/src/Form/VacancyAdminType.php
 http://100.26.111.67/baobab/src/Form/VacancyType.php
 http://100.26.111.67/baobab/src/Kernel.php
-http://100.26.111.67/baobab/src/Repository/.gitignore
 http://100.26.111.67/baobab/src/Repository/ApplicationRepository.php
 http://100.26.111.67/baobab/src/Repository/CategoryRepository.php
 http://100.26.111.67/baobab/src/Repository/ConsultantRepository.php
@@ -186,7 +178,6 @@ http://100.26.111.67/baobab/templates/vacancy/job_details.html.twig
 http://100.26.111.67/baobab/templates/vacancy/new.html.twig
 http://100.26.111.67/baobab/templates/vacancy/show.html.twig
 http://100.26.111.67/baobab/tests/bootstrap.php
-http://100.26.111.67/baobab/translations/.gitignore
 http://100.26.111.67/baobab/var/cache/dev/App_KernelDevDebugContainer.php
 http://100.26.111.67/baobab/var/cache/dev/App_KernelDevDebugContainer.php.lock
 http://100.26.111.67/baobab/var/cache/dev/App_KernelDevDebugContainer.php.meta
