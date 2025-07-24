@@ -2878,3 +2878,29 @@ Nmap done: 1 IP address (1 host up) scanned in 37.32 seconds
 -----------------------------
 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:52 UTC
+Nmap scan report for a23-53-126-145.deploy.static.akamaitechnologies.com (23.53.126.145)
+Host is up (0.22s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+|_http-title: Invalid URL
+443/tcp open  ssl/http AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+|_http-title: Invalid URL
+| ssl-cert: Subject: commonName=a248.e.akamai.net/organizationName=Akamai Technologies, Inc./stateOrProvinceName=Massachusetts/countryName=US
+| Subject Alternative Name: DNS:a248.e.akamai.net, DNS:*.akamaized.net, DNS:*.akamaized-staging.net, DNS:*.akamaihd.net, DNS:*.akamaihd-staging.net
+| Not valid before: 2025-03-18T00:00:00
+|_Not valid after:  2026-03-18T23:59:59
+| tls-alpn: 
+|   http/1.1
+|_  http/1.0
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   http/1.1
+|_  http/1.0
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 37.94 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:53 UTC
