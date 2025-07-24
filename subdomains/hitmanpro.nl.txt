@@ -1,0 +1,7 @@
+ftp.hitmanpro.nl
+www.cloud.hitmanpro.nl
+www.hitmanpro.nl
+cloud.hitmanpro.nl
+sip.hitmanpro.nl
+mail.hitmanpro.nl
+autodiscover.hitmanpro.nl
