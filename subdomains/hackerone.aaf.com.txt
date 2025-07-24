@@ -1,0 +1,3 @@
+api.platform.hackerone.aaf.com
+staging-u9r5saer2stgpluymuqj.hackerone.aaf.com
+personnel.hackerone.aaf.com
