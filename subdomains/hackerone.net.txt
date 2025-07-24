@@ -1,0 +1,4 @@
+device2514505-53c71556.hackerone.net
+www.hackerone.net
+vpn.hackerone.net
+errors.hackerone.net
