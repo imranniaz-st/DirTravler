@@ -19,7 +19,10 @@ is_directory_listing() {
 }
 
 extract_links() {
-    echo "$1" | grep -oP '(?<=href=")[^"]+' | grep -vE '^(mailto:|javascript:|#)' | sort -u
+    echo "$1" | grep -oP '(?<=href=")[^"]+' |
+    grep -vE '^(mailto:|javascript:|#)' |
+    grep -vE '\?C=[A-Z];O=[A-Z]|/\?' |  # skip directory sort query links
+    sort -u
 }
 
 crawl() {
