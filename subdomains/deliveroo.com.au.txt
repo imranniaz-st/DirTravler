@@ -1,0 +1,17 @@
+rider.deliveroo.com.au
+gnocchignocchibrothers.order.deliveroo.com.au
+dtm.deliveroo.com.au
+foodscene.deliveroo.com.au
+test.deliveroo.com.au
+order-staging.deliveroo.com.au
+arrivedercipizza.order.deliveroo.com.au
+bigroddysribs.order.deliveroo.com.au
+www.deliveroo.com.au
+staging.deliveroo.com.au
+sandbox.deliveroo.com.au
+careers.deliveroo.com.au
+order.deliveroo.com.au
+huxtaburger.order.deliveroo.com.au
+riders.deliveroo.com.au
+admin.deliveroo.com.au
+thirstybird.order.deliveroo.com.au
