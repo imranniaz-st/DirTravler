@@ -51,6 +51,12 @@ crawl() {
 
             next=$(normalize_url "$next")
 
+            # Skip blacklisted folders
+            if [[ "$next" =~ /(node_modules|\.git|vendor|\.idea|\.vscode|__MACOSX)/ ]]; then
+                echo "[SKIP] Ignoring blacklisted path: $next"
+                continue
+            fi
+
             if [[ "$next" =~ /$ ]]; then
                 crawl "$next"
             else
@@ -61,7 +67,7 @@ crawl() {
     fi
 }
 
-# === Modified Section to read from txt file ===
+# === Read targets from txt file ===
 
 if [[ -z "$1" || ! -f "$1" ]]; then
     echo "Usage: $0 <targets.txt>"
@@ -71,7 +77,7 @@ fi
 rm -f found.txt found_files.txt
 
 while IFS= read -r target; do
-    target=$(echo "$target" | xargs)  # Trim spaces
+    target=$(echo "$target" | xargs)  # Trim whitespace
     [[ -z "$target" ]] && continue
 
     # Add http:// if not present
