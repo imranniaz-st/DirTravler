@@ -34,3 +34,14 @@ Penetration testers often need to **enumerate subdomains** quickly and reliably 
 
 ## 📂 Folder Structure After Execution
 
+
+> ✅ You can mix full domains, subdomains, or URLs — the script will clean them.
+
+---
+
+### 2. Run the script
+
+```bash
+chmod +x find_subdomains.sh
+./find_subdomains.sh
+
