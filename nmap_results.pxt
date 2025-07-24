@@ -2191,3 +2191,413 @@ Nmap done: 1 IP address (1 host up) scanned in 32.07 seconds
 -----------------------------
 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:49 UTC
+Nmap scan report for 151.101.3.1
+Host is up (0.066s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      Varnish
+|_http-server-header: Varnish
+|_http-title: Fastly error: unknown domain 151.101.3.1
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 500 Domain Not Found
+|     Connection: close
+|     Content-Length: 242
+|     Server: Varnish
+|     Retry-After: 0
+|     content-type: text/html
+|     Cache-Control: private, no-cache
+|     X-Served-By: cache-sin-wsss1830083-SIN
+|     Accept-Ranges: bytes
+|     Date: Thu, 24 Jul 2025 18:49:55 GMT
+|     Via: 1.1 varnish
+|     <html>
+|     <head>
+|     <title>Fastly error: unknown domain </title>
+|     </head>
+|     <body>
+|     <p>Fastly error: unknown domain: . Please check that this domain has been added to a service.</p>
+|     <p>Details: cache-sin-wsss1830083-SIN (151.101.3.1)</p></body></html>
+|   GetRequest: 
+|     HTTP/1.1 500 Domain Not Found
+|     Connection: close
+|     Content-Length: 242
+|     Server: Varnish
+|     Retry-After: 0
+|     content-type: text/html
+|     Cache-Control: private, no-cache
+|     X-Served-By: cache-sin-wsss1830040-SIN
+|     Accept-Ranges: bytes
+|     Date: Thu, 24 Jul 2025 18:49:55 GMT
+|     Via: 1.1 varnish
+|     <html>
+|     <head>
+|     <title>Fastly error: unknown domain </title>
+|     </head>
+|     <body>
+|     <p>Fastly error: unknown domain: . Please check that this domain has been added to a service.</p>
+|     <p>Details: cache-sin-wsss1830040-SIN (151.101.3.1)</p></body></html>
+|   HTTPOptions: 
+|     HTTP/1.1 500 Domain Not Found
+|     Connection: close
+|     Content-Length: 242
+|     Server: Varnish
+|     Retry-After: 0
+|     content-type: text/html
+|     Cache-Control: private, no-cache
+|     X-Served-By: cache-sin-wsss1830053-SIN
+|     Accept-Ranges: bytes
+|     Date: Thu, 24 Jul 2025 18:49:55 GMT
+|     Via: 1.1 varnish
+|     <html>
+|     <head>
+|     <title>Fastly error: unknown domain </title>
+|     </head>
+|     <body>
+|     <p>Fastly error: unknown domain: . Please check that this domain has been added to a service.</p>
+|     <p>Details: cache-sin-wsss1830053-SIN (151.101.3.1)</p></body></html>
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Content-Length: 11
+|     content-type: text/plain; charset=utf-8
+|     x-served-by: cache-sin-wsss1830027
+|     Request
+|   X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Content-Length: 11
+|     content-type: text/plain; charset=utf-8
+|     x-served-by: cache-sin-wsss1830024
+|_    Request
+443/tcp open  ssl/https
+| ssl-cert: Subject: commonName=www.paypal.com/organizationName=PayPal, Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:www.paypal.com, DNS:fastlane.paypal.com, DNS:secure.paypal.com, DNS:www-st.paypal.com, DNS:connect.paypal.com, DNS:m.paypal.es, DNS:id.hyperwallet.com, DNS:braintreepayments.com, DNS:m.paypal.it, DNS:www.py.pl, DNS:creditapply.paypal.com, DNS:support.braintreepayments.com, DNS:us.paypal-qrc-seller-supplies.com, DNS:pp-us.paypal.com, DNS:safebreach.paypal.com, DNS:demo.paypal.com, DNS:mobile.paypal.com, DNS:checkout.paypal.com, DNS:history.paypal.com, DNS:sspserv.paypal.com, DNS:braintreecharge.com, DNS:t.paypal.com, DNS:braintreepaymentsolutions.com, DNS:brand.braintreepayments.com, DNS:securepayments.paypal.com, DNS:www.braintreepayments.com, DNS:c6.paypal.com, DNS:m.paypal.com, DNS:transfer.paypal.com, DNS:pics.paypal.com, DNS:m.paypal.fr, DNS:www.braintreecharge.com, DNS:us.paypal-qrc.com, DNS:de.paypal-qrc.com, DNS:id.joinhoney.com, DNS:business.paypal.com, DNS:developers.braintreepayments.com, DNS:financing.paypal.com, DNS:ssp.paypal.com, DNS:developer.braintreepayments.com, DNS:id.xoom.com, DNS:www.braintreepaymentsolutions.com, DNS:js.braintreegateway.com, DNS:developer.paypal.com, DNS:id.paypal.com, DNS:fpdbs.paypal.com, DNS:www.paypal.biz, DNS:www.paypalobjects.com, DNS:fr.paypal-qrc.com, DNS:onboarding.paypal.com, DNS:qwac.paypal.com, DNS:www.fastlane.paypal.com, DNS:uk.paypal-qrc.com, DNS:content.paypalobjects.com, DNS:articles.braintreepayments.com, DNS:id.braintreegateway.com, DNS:www.braintreefinancial.com, DNS:paypal.me, DNS:pointofsale-s.paypal.com, DNS:p.paypal.com, DNS:assets.braintreegateway.com, DNS:braintreefinancial.com, DNS:pp-in.paypal.com, DNS:zettleintegrations.paypal.com, DNS:it.paypal-qrc.com, DNS:c.paypal.com, DNS:www.brand.braintreepayments.com, DNS:py.pl, DNS:id.venmo.com, DNS:m.paypal.co.uk, DNS:pep.paypal.com, DNS:id.zettle.com, DNS:cors.api.paypal.com, DNS:help.braintreepayments.com, DNS:login.paypal.com, DNS:pp-au.paypal.com, DNS:m.paypal.com.au, DNS:pp-eu.paypal.com, DNS:es.paypal-qrc.com
+| Not valid before: 2025-01-10T00:00:00
+|_Not valid after:  2026-01-09T23:59:59
+|_ssl-date: TLS randomness does not represent time
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 421 Misdirected Request
+|     Connection: close
+|     Content-Length: 291
+|     content-type: text/plain; charset=utf-8
+|     x-served-by: cache-sin-wsss1830025
+|     Requested host does not match any Subject Alternative Names (SANs) on TLS certificate [73110b399fe6e74f44a1a412466ae93b4a15c718639b8b8bef64bdf7c8f62baa] in use with this connection.
+|     Visit https://www.fastly.com/documentation/guides/concepts/errors/#routing-errors for more information.
+|   GetRequest: 
+|     HTTP/1.1 421 Misdirected Request
+|     Connection: close
+|     Content-Length: 291
+|     content-type: text/plain; charset=utf-8
+|     x-served-by: cache-sin-wsss1830088
+|     Requested host does not match any Subject Alternative Names (SANs) on TLS certificate [73110b399fe6e74f44a1a412466ae93b4a15c718639b8b8bef64bdf7c8f62baa] in use with this connection.
+|     Visit https://www.fastly.com/documentation/guides/concepts/errors/#routing-errors for more information.
+|   HTTPOptions: 
+|     HTTP/1.1 421 Misdirected Request
+|     Connection: close
+|     Content-Length: 291
+|     content-type: text/plain; charset=utf-8
+|     x-served-by: cache-sin-wsss1830060
+|     Requested host does not match any Subject Alternative Names (SANs) on TLS certificate [73110b399fe6e74f44a1a412466ae93b4a15c718639b8b8bef64bdf7c8f62baa] in use with this connection.
+|     Visit https://www.fastly.com/documentation/guides/concepts/errors/#routing-errors for more information.
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Content-Length: 11
+|     content-type: text/plain; charset=utf-8
+|     x-served-by: cache-sin-wsss1830081
+|     Request
+|   tor-versions: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Content-Length: 11
+|     content-type: text/plain; charset=utf-8
+|     x-served-by: cache-sin-wsss1830034
+|_    Request
+|_http-title: Site doesn't have a title (text/plain; charset=utf-8).
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.94SVN%I=7%D=7/24%Time=68828053%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,20C,"HTTP/1\.1\x20500\x20Domain\x20Not\x20Found\r\nConnection
+SF::\x20close\r\nContent-Length:\x20242\r\nServer:\x20Varnish\r\nRetry-Aft
+SF:er:\x200\r\ncontent-type:\x20text/html\r\nCache-Control:\x20private,\x2
+SF:0no-cache\r\nX-Served-By:\x20cache-sin-wsss1830040-SIN\r\nAccept-Ranges
+SF::\x20bytes\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:49:55\x20GMT\r\n
+SF:Via:\x201\.1\x20varnish\r\n\r\n\n<html>\n<head>\n<title>Fastly\x20error
+SF::\x20unknown\x20domain\x20</title>\n</head>\n<body>\n<p>Fastly\x20error
+SF::\x20unknown\x20domain:\x20\.\x20Please\x20check\x20that\x20this\x20dom
+SF:ain\x20has\x20been\x20added\x20to\x20a\x20service\.</p>\n<p>Details:\x2
+SF:0cache-sin-wsss1830040-SIN\x20\(151\.101\.3\.1\)</p></body></html>")%r(
+SF:HTTPOptions,20C,"HTTP/1\.1\x20500\x20Domain\x20Not\x20Found\r\nConnecti
+SF:on:\x20close\r\nContent-Length:\x20242\r\nServer:\x20Varnish\r\nRetry-A
+SF:fter:\x200\r\ncontent-type:\x20text/html\r\nCache-Control:\x20private,\
+SF:x20no-cache\r\nX-Served-By:\x20cache-sin-wsss1830053-SIN\r\nAccept-Rang
+SF:es:\x20bytes\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:49:55\x20GMT\r
+SF:\nVia:\x201\.1\x20varnish\r\n\r\n\n<html>\n<head>\n<title>Fastly\x20err
+SF:or:\x20unknown\x20domain\x20</title>\n</head>\n<body>\n<p>Fastly\x20err
+SF:or:\x20unknown\x20domain:\x20\.\x20Please\x20check\x20that\x20this\x20d
+SF:omain\x20has\x20been\x20added\x20to\x20a\x20service\.</p>\n<p>Details:\
+SF:x20cache-sin-wsss1830053-SIN\x20\(151\.101\.3\.1\)</p></body></html>")%
+SF:r(RTSPRequest,9B,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20
+SF:close\r\nContent-Length:\x2011\r\ncontent-type:\x20text/plain;\x20chars
+SF:et=utf-8\r\nx-served-by:\x20cache-sin-wsss1830027\r\n\r\nBad\x20Request
+SF:")%r(X11Probe,9B,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20
+SF:close\r\nContent-Length:\x2011\r\ncontent-type:\x20text/plain;\x20chars
+SF:et=utf-8\r\nx-served-by:\x20cache-sin-wsss1830024\r\n\r\nBad\x20Request
+SF:")%r(FourOhFourRequest,20C,"HTTP/1\.1\x20500\x20Domain\x20Not\x20Found\
+SF:r\nConnection:\x20close\r\nContent-Length:\x20242\r\nServer:\x20Varnish
+SF:\r\nRetry-After:\x200\r\ncontent-type:\x20text/html\r\nCache-Control:\x
+SF:20private,\x20no-cache\r\nX-Served-By:\x20cache-sin-wsss1830083-SIN\r\n
+SF:Accept-Ranges:\x20bytes\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:49:
+SF:55\x20GMT\r\nVia:\x201\.1\x20varnish\r\n\r\n\n<html>\n<head>\n<title>Fa
+SF:stly\x20error:\x20unknown\x20domain\x20</title>\n</head>\n<body>\n<p>Fa
+SF:stly\x20error:\x20unknown\x20domain:\x20\.\x20Please\x20check\x20that\x
+SF:20this\x20domain\x20has\x20been\x20added\x20to\x20a\x20service\.</p>\n<
+SF:p>Details:\x20cache-sin-wsss1830083-SIN\x20\(151\.101\.3\.1\)</p></body
+SF:></html>");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=7/24%Time=68828059%P=x86_64-pc-linux-
+SF:gnu%r(GetRequest,1BC,"HTTP/1\.1\x20421\x20Misdirected\x20Request\r\nCon
+SF:nection:\x20close\r\nContent-Length:\x20291\r\ncontent-type:\x20text/pl
+SF:ain;\x20charset=utf-8\r\nx-served-by:\x20cache-sin-wsss1830088\r\n\r\nR
+SF:equested\x20host\x20does\x20not\x20match\x20any\x20Subject\x20Alternati
+SF:ve\x20Names\x20\(SANs\)\x20on\x20TLS\x20certificate\x20\[73110b399fe6e7
+SF:4f44a1a412466ae93b4a15c718639b8b8bef64bdf7c8f62baa\]\x20in\x20use\x20wi
+SF:th\x20this\x20connection\.\r\n\r\nVisit\x20https://www\.fastly\.com/doc
+SF:umentation/guides/concepts/errors/#routing-errors\x20for\x20more\x20inf
+SF:ormation\.\r\n\r")%r(HTTPOptions,1BC,"HTTP/1\.1\x20421\x20Misdirected\x
+SF:20Request\r\nConnection:\x20close\r\nContent-Length:\x20291\r\ncontent-
+SF:type:\x20text/plain;\x20charset=utf-8\r\nx-served-by:\x20cache-sin-wsss
+SF:1830060\r\n\r\nRequested\x20host\x20does\x20not\x20match\x20any\x20Subj
+SF:ect\x20Alternative\x20Names\x20\(SANs\)\x20on\x20TLS\x20certificate\x20
+SF:\[73110b399fe6e74f44a1a412466ae93b4a15c718639b8b8bef64bdf7c8f62baa\]\x2
+SF:0in\x20use\x20with\x20this\x20connection\.\r\n\r\nVisit\x20https://www\
+SF:.fastly\.com/documentation/guides/concepts/errors/#routing-errors\x20fo
+SF:r\x20more\x20information\.\r\n\r")%r(FourOhFourRequest,1BC,"HTTP/1\.1\x
+SF:20421\x20Misdirected\x20Request\r\nConnection:\x20close\r\nContent-Leng
+SF:th:\x20291\r\ncontent-type:\x20text/plain;\x20charset=utf-8\r\nx-served
+SF:-by:\x20cache-sin-wsss1830025\r\n\r\nRequested\x20host\x20does\x20not\x
+SF:20match\x20any\x20Subject\x20Alternative\x20Names\x20\(SANs\)\x20on\x20
+SF:TLS\x20certificate\x20\[73110b399fe6e74f44a1a412466ae93b4a15c718639b8b8
+SF:bef64bdf7c8f62baa\]\x20in\x20use\x20with\x20this\x20connection\.\r\n\r\
+SF:nVisit\x20https://www\.fastly\.com/documentation/guides/concepts/errors
+SF:/#routing-errors\x20for\x20more\x20information\.\r\n\r")%r(tor-versions
+SF:,9B,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nCont
+SF:ent-Length:\x2011\r\ncontent-type:\x20text/plain;\x20charset=utf-8\r\nx
+SF:-served-by:\x20cache-sin-wsss1830034\r\n\r\nBad\x20Request")%r(RTSPRequ
+SF:est,9B,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nC
+SF:ontent-Length:\x2011\r\ncontent-type:\x20text/plain;\x20charset=utf-8\r
+SF:\nx-served-by:\x20cache-sin-wsss1830081\r\n\r\nBad\x20Request");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 33.96 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:50 UTC
+Nmap scan report for 151.101.67.1
+Host is up (0.056s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      Varnish
+|_http-title: Fastly error: unknown domain 151.101.67.1
+|_http-server-header: Varnish
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 500 Domain Not Found
+|     Connection: close
+|     Content-Length: 243
+|     Server: Varnish
+|     Retry-After: 0
+|     content-type: text/html
+|     Cache-Control: private, no-cache
+|     X-Served-By: cache-sin-wsss1830084-SIN
+|     Accept-Ranges: bytes
+|     Date: Thu, 24 Jul 2025 18:50:28 GMT
+|     Via: 1.1 varnish
+|     <html>
+|     <head>
+|     <title>Fastly error: unknown domain </title>
+|     </head>
+|     <body>
+|     <p>Fastly error: unknown domain: . Please check that this domain has been added to a service.</p>
+|     <p>Details: cache-sin-wsss1830084-SIN (151.101.67.1)</p></body></html>
+|   GetRequest: 
+|     HTTP/1.1 500 Domain Not Found
+|     Connection: close
+|     Content-Length: 243
+|     Server: Varnish
+|     Retry-After: 0
+|     content-type: text/html
+|     Cache-Control: private, no-cache
+|     X-Served-By: cache-sin-wsss1830088-SIN
+|     Accept-Ranges: bytes
+|     Date: Thu, 24 Jul 2025 18:50:27 GMT
+|     Via: 1.1 varnish
+|     <html>
+|     <head>
+|     <title>Fastly error: unknown domain </title>
+|     </head>
+|     <body>
+|     <p>Fastly error: unknown domain: . Please check that this domain has been added to a service.</p>
+|     <p>Details: cache-sin-wsss1830088-SIN (151.101.67.1)</p></body></html>
+|   HTTPOptions: 
+|     HTTP/1.1 500 Domain Not Found
+|     Connection: close
+|     Content-Length: 243
+|     Server: Varnish
+|     Retry-After: 0
+|     content-type: text/html
+|     Cache-Control: private, no-cache
+|     X-Served-By: cache-sin-wsss1830033-SIN
+|     Accept-Ranges: bytes
+|     Date: Thu, 24 Jul 2025 18:50:27 GMT
+|     Via: 1.1 varnish
+|     <html>
+|     <head>
+|     <title>Fastly error: unknown domain </title>
+|     </head>
+|     <body>
+|     <p>Fastly error: unknown domain: . Please check that this domain has been added to a service.</p>
+|     <p>Details: cache-sin-wsss1830033-SIN (151.101.67.1)</p></body></html>
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Content-Length: 11
+|     content-type: text/plain; charset=utf-8
+|     x-served-by: cache-sin-wsss1830030
+|     Request
+|   X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Content-Length: 11
+|     content-type: text/plain; charset=utf-8
+|     x-served-by: cache-sin-wsss1830037
+|_    Request
+443/tcp open  ssl/https
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=www.paypal.com/organizationName=PayPal, Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:www.paypal.com, DNS:fastlane.paypal.com, DNS:secure.paypal.com, DNS:www-st.paypal.com, DNS:connect.paypal.com, DNS:m.paypal.es, DNS:id.hyperwallet.com, DNS:braintreepayments.com, DNS:m.paypal.it, DNS:www.py.pl, DNS:creditapply.paypal.com, DNS:support.braintreepayments.com, DNS:us.paypal-qrc-seller-supplies.com, DNS:pp-us.paypal.com, DNS:safebreach.paypal.com, DNS:demo.paypal.com, DNS:mobile.paypal.com, DNS:checkout.paypal.com, DNS:history.paypal.com, DNS:sspserv.paypal.com, DNS:braintreecharge.com, DNS:t.paypal.com, DNS:braintreepaymentsolutions.com, DNS:brand.braintreepayments.com, DNS:securepayments.paypal.com, DNS:www.braintreepayments.com, DNS:c6.paypal.com, DNS:m.paypal.com, DNS:transfer.paypal.com, DNS:pics.paypal.com, DNS:m.paypal.fr, DNS:www.braintreecharge.com, DNS:us.paypal-qrc.com, DNS:de.paypal-qrc.com, DNS:id.joinhoney.com, DNS:business.paypal.com, DNS:developers.braintreepayments.com, DNS:financing.paypal.com, DNS:ssp.paypal.com, DNS:developer.braintreepayments.com, DNS:id.xoom.com, DNS:www.braintreepaymentsolutions.com, DNS:js.braintreegateway.com, DNS:developer.paypal.com, DNS:id.paypal.com, DNS:fpdbs.paypal.com, DNS:www.paypal.biz, DNS:www.paypalobjects.com, DNS:fr.paypal-qrc.com, DNS:onboarding.paypal.com, DNS:qwac.paypal.com, DNS:www.fastlane.paypal.com, DNS:uk.paypal-qrc.com, DNS:content.paypalobjects.com, DNS:articles.braintreepayments.com, DNS:id.braintreegateway.com, DNS:www.braintreefinancial.com, DNS:paypal.me, DNS:pointofsale-s.paypal.com, DNS:p.paypal.com, DNS:assets.braintreegateway.com, DNS:braintreefinancial.com, DNS:pp-in.paypal.com, DNS:zettleintegrations.paypal.com, DNS:it.paypal-qrc.com, DNS:c.paypal.com, DNS:www.brand.braintreepayments.com, DNS:py.pl, DNS:id.venmo.com, DNS:m.paypal.co.uk, DNS:pep.paypal.com, DNS:id.zettle.com, DNS:cors.api.paypal.com, DNS:help.braintreepayments.com, DNS:login.paypal.com, DNS:pp-au.paypal.com, DNS:m.paypal.com.au, DNS:pp-eu.paypal.com, DNS:es.paypal-qrc.com
+| Not valid before: 2025-01-10T00:00:00
+|_Not valid after:  2026-01-09T23:59:59
+|_http-title: Site doesn't have a title (text/plain; charset=utf-8).
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 421 Misdirected Request
+|     Connection: close
+|     Content-Length: 291
+|     content-type: text/plain; charset=utf-8
+|     x-served-by: cache-sin-wsss1830024
+|     Requested host does not match any Subject Alternative Names (SANs) on TLS certificate [73110b399fe6e74f44a1a412466ae93b4a15c718639b8b8bef64bdf7c8f62baa] in use with this connection.
+|     Visit https://www.fastly.com/documentation/guides/concepts/errors/#routing-errors for more information.
+|   GetRequest: 
+|     HTTP/1.1 421 Misdirected Request
+|     Connection: close
+|     Content-Length: 291
+|     content-type: text/plain; charset=utf-8
+|     x-served-by: cache-sin-wsss1830048
+|     Requested host does not match any Subject Alternative Names (SANs) on TLS certificate [73110b399fe6e74f44a1a412466ae93b4a15c718639b8b8bef64bdf7c8f62baa] in use with this connection.
+|     Visit https://www.fastly.com/documentation/guides/concepts/errors/#routing-errors for more information.
+|   HTTPOptions: 
+|     HTTP/1.1 421 Misdirected Request
+|     Connection: close
+|     Content-Length: 291
+|     content-type: text/plain; charset=utf-8
+|     x-served-by: cache-sin-wsss1830069
+|     Requested host does not match any Subject Alternative Names (SANs) on TLS certificate [73110b399fe6e74f44a1a412466ae93b4a15c718639b8b8bef64bdf7c8f62baa] in use with this connection.
+|     Visit https://www.fastly.com/documentation/guides/concepts/errors/#routing-errors for more information.
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Content-Length: 11
+|     content-type: text/plain; charset=utf-8
+|     x-served-by: cache-sin-wsss1830074
+|     Request
+|   tor-versions: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Content-Length: 11
+|     content-type: text/plain; charset=utf-8
+|     x-served-by: cache-sin-wsss1830090
+|_    Request
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.94SVN%I=7%D=7/24%Time=68828073%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,20D,"HTTP/1\.1\x20500\x20Domain\x20Not\x20Found\r\nConnection
+SF::\x20close\r\nContent-Length:\x20243\r\nServer:\x20Varnish\r\nRetry-Aft
+SF:er:\x200\r\ncontent-type:\x20text/html\r\nCache-Control:\x20private,\x2
+SF:0no-cache\r\nX-Served-By:\x20cache-sin-wsss1830088-SIN\r\nAccept-Ranges
+SF::\x20bytes\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:50:27\x20GMT\r\n
+SF:Via:\x201\.1\x20varnish\r\n\r\n\n<html>\n<head>\n<title>Fastly\x20error
+SF::\x20unknown\x20domain\x20</title>\n</head>\n<body>\n<p>Fastly\x20error
+SF::\x20unknown\x20domain:\x20\.\x20Please\x20check\x20that\x20this\x20dom
+SF:ain\x20has\x20been\x20added\x20to\x20a\x20service\.</p>\n<p>Details:\x2
+SF:0cache-sin-wsss1830088-SIN\x20\(151\.101\.67\.1\)</p></body></html>")%r
+SF:(HTTPOptions,20D,"HTTP/1\.1\x20500\x20Domain\x20Not\x20Found\r\nConnect
+SF:ion:\x20close\r\nContent-Length:\x20243\r\nServer:\x20Varnish\r\nRetry-
+SF:After:\x200\r\ncontent-type:\x20text/html\r\nCache-Control:\x20private,
+SF:\x20no-cache\r\nX-Served-By:\x20cache-sin-wsss1830033-SIN\r\nAccept-Ran
+SF:ges:\x20bytes\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:50:27\x20GMT\
+SF:r\nVia:\x201\.1\x20varnish\r\n\r\n\n<html>\n<head>\n<title>Fastly\x20er
+SF:ror:\x20unknown\x20domain\x20</title>\n</head>\n<body>\n<p>Fastly\x20er
+SF:ror:\x20unknown\x20domain:\x20\.\x20Please\x20check\x20that\x20this\x20
+SF:domain\x20has\x20been\x20added\x20to\x20a\x20service\.</p>\n<p>Details:
+SF:\x20cache-sin-wsss1830033-SIN\x20\(151\.101\.67\.1\)</p></body></html>"
+SF:)%r(RTSPRequest,9B,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x
+SF:20close\r\nContent-Length:\x2011\r\ncontent-type:\x20text/plain;\x20cha
+SF:rset=utf-8\r\nx-served-by:\x20cache-sin-wsss1830030\r\n\r\nBad\x20Reque
+SF:st")%r(X11Probe,9B,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x
+SF:20close\r\nContent-Length:\x2011\r\ncontent-type:\x20text/plain;\x20cha
+SF:rset=utf-8\r\nx-served-by:\x20cache-sin-wsss1830037\r\n\r\nBad\x20Reque
+SF:st")%r(FourOhFourRequest,20D,"HTTP/1\.1\x20500\x20Domain\x20Not\x20Foun
+SF:d\r\nConnection:\x20close\r\nContent-Length:\x20243\r\nServer:\x20Varni
+SF:sh\r\nRetry-After:\x200\r\ncontent-type:\x20text/html\r\nCache-Control:
+SF:\x20private,\x20no-cache\r\nX-Served-By:\x20cache-sin-wsss1830084-SIN\r
+SF:\nAccept-Ranges:\x20bytes\r\nDate:\x20Thu,\x2024\x20Jul\x202025\x2018:5
+SF:0:28\x20GMT\r\nVia:\x201\.1\x20varnish\r\n\r\n\n<html>\n<head>\n<title>
+SF:Fastly\x20error:\x20unknown\x20domain\x20</title>\n</head>\n<body>\n<p>
+SF:Fastly\x20error:\x20unknown\x20domain:\x20\.\x20Please\x20check\x20that
+SF:\x20this\x20domain\x20has\x20been\x20added\x20to\x20a\x20service\.</p>\
+SF:n<p>Details:\x20cache-sin-wsss1830084-SIN\x20\(151\.101\.67\.1\)</p></b
+SF:ody></html>");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=7/24%Time=68828079%P=x86_64-pc-linux-
+SF:gnu%r(GetRequest,1BC,"HTTP/1\.1\x20421\x20Misdirected\x20Request\r\nCon
+SF:nection:\x20close\r\nContent-Length:\x20291\r\ncontent-type:\x20text/pl
+SF:ain;\x20charset=utf-8\r\nx-served-by:\x20cache-sin-wsss1830048\r\n\r\nR
+SF:equested\x20host\x20does\x20not\x20match\x20any\x20Subject\x20Alternati
+SF:ve\x20Names\x20\(SANs\)\x20on\x20TLS\x20certificate\x20\[73110b399fe6e7
+SF:4f44a1a412466ae93b4a15c718639b8b8bef64bdf7c8f62baa\]\x20in\x20use\x20wi
+SF:th\x20this\x20connection\.\r\n\r\nVisit\x20https://www\.fastly\.com/doc
+SF:umentation/guides/concepts/errors/#routing-errors\x20for\x20more\x20inf
+SF:ormation\.\r\n\r")%r(HTTPOptions,1BC,"HTTP/1\.1\x20421\x20Misdirected\x
+SF:20Request\r\nConnection:\x20close\r\nContent-Length:\x20291\r\ncontent-
+SF:type:\x20text/plain;\x20charset=utf-8\r\nx-served-by:\x20cache-sin-wsss
+SF:1830069\r\n\r\nRequested\x20host\x20does\x20not\x20match\x20any\x20Subj
+SF:ect\x20Alternative\x20Names\x20\(SANs\)\x20on\x20TLS\x20certificate\x20
+SF:\[73110b399fe6e74f44a1a412466ae93b4a15c718639b8b8bef64bdf7c8f62baa\]\x2
+SF:0in\x20use\x20with\x20this\x20connection\.\r\n\r\nVisit\x20https://www\
+SF:.fastly\.com/documentation/guides/concepts/errors/#routing-errors\x20fo
+SF:r\x20more\x20information\.\r\n\r")%r(FourOhFourRequest,1BC,"HTTP/1\.1\x
+SF:20421\x20Misdirected\x20Request\r\nConnection:\x20close\r\nContent-Leng
+SF:th:\x20291\r\ncontent-type:\x20text/plain;\x20charset=utf-8\r\nx-served
+SF:-by:\x20cache-sin-wsss1830024\r\n\r\nRequested\x20host\x20does\x20not\x
+SF:20match\x20any\x20Subject\x20Alternative\x20Names\x20\(SANs\)\x20on\x20
+SF:TLS\x20certificate\x20\[73110b399fe6e74f44a1a412466ae93b4a15c718639b8b8
+SF:bef64bdf7c8f62baa\]\x20in\x20use\x20with\x20this\x20connection\.\r\n\r\
+SF:nVisit\x20https://www\.fastly\.com/documentation/guides/concepts/errors
+SF:/#routing-errors\x20for\x20more\x20information\.\r\n\r")%r(tor-versions
+SF:,9B,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nCont
+SF:ent-Length:\x2011\r\ncontent-type:\x20text/plain;\x20charset=utf-8\r\nx
+SF:-served-by:\x20cache-sin-wsss1830090\r\n\r\nBad\x20Request")%r(RTSPRequ
+SF:est,9B,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nC
+SF:ontent-Length:\x2011\r\ncontent-type:\x20text/plain;\x20charset=utf-8\r
+SF:\nx-served-by:\x20cache-sin-wsss1830074\r\n\r\nBad\x20Request");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 31.99 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:50 UTC
