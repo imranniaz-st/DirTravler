@@ -2829,3 +2829,52 @@ Nmap done: 1 IP address (1 host up) scanned in 21.45 seconds
 -----------------------------
 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:51 UTC
+Nmap scan report for 159.242.242.128
+Host is up (0.0038s latency).
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Cloudflare http proxy
+|_http-title: Site doesn't have a title (text/plain; charset=UTF-8).
+|_http-server-header: cloudflare
+443/tcp  open  ssl/https     cloudflare
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+|_http-server-header: cloudflare
+8080/tcp open  http          Cloudflare http proxy
+|_http-server-header: cloudflare
+|_http-title: Site doesn't have a title (text/plain; charset=UTF-8).
+8443/tcp open  ssl/https-alt cloudflare
+|_http-server-header: cloudflare
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 21.84 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:52 UTC
+Nmap scan report for a23-53-126-164.deploy.static.akamaitechnologies.com (23.53.126.164)
+Host is up (0.21s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+|_http-title: Invalid URL
+443/tcp open  ssl/http AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+| ssl-cert: Subject: commonName=a248.e.akamai.net/organizationName=Akamai Technologies, Inc./stateOrProvinceName=Massachusetts/countryName=US
+| Subject Alternative Name: DNS:a248.e.akamai.net, DNS:*.akamaized.net, DNS:*.akamaized-staging.net, DNS:*.akamaihd.net, DNS:*.akamaihd-staging.net
+| Not valid before: 2025-03-18T00:00:00
+|_Not valid after:  2026-03-18T23:59:59
+|_http-title: Invalid URL
+| tls-nextprotoneg: 
+|   http/1.1
+|_  http/1.0
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   http/1.1
+|_  http/1.0
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 37.32 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:52 UTC
