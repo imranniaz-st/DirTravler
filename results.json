@@ -1744,3 +1744,27 @@
     ""
   ]
 }
+{
+  "ip": "geo.cardinalcommerce.com",
+  "http_status": "403",
+  "open_ports": "21/tcp filtered 22/tcp filtered 23/tcp filtered 25/tcp filtered 53/tcp filtered 80/tcp open 110/tcp filtered 111/tcp filtered 135/tcp filtered 139/tcp filtered 143/tcp filtered 443/tcp open 445/tcp filtered 993/tcp filtered 995/tcp filtered 1723/tcp filtered 3306/tcp filtered 3389/tcp filtered 5900/tcp filtered 8080/tcp open",
+  "server_header": "cloudflare\r",
+  "ssl_issuer": "",
+  "ssl_expiry": "",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
+{
+  "ip": "1eafstag.cardinalcommerce.com",
+  "http_status": "",
+  "open_ports": "",
+  "server_header": "",
+  "ssl_issuer": "",
+  "ssl_expiry": "",
+  "technologies": "",
+  "interesting_directories": [
+    ""
+  ]
+}
