@@ -947,3 +947,22 @@ Nmap done: 1 IP address (1 host up) scanned in 135.71 seconds
 -----------------------------
 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:30 UTC
+Nmap scan report for ccg13-origin-api-m.paypal.com (173.0.87.21)
+Host is up (0.24s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE        VERSION
+443/tcp   open     ssl/https?
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=edge.paypal.com/organizationName=PayPal, Inc./stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:edge.paypal.com
+| Not valid before: 2024-09-23T00:00:00
+|_Not valid after:  2025-09-22T23:59:59
+16992/tcp filtered amt-soap-http
+16993/tcp filtered amt-soap-https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 288.28 seconds
+
+-----------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-07-24 18:34 UTC
