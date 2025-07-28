@@ -45,3 +45,4 @@ Penetration testers often need to **enumerate subdomains** quickly and reliably 
 chmod +x find_subdomains.sh
 ./find_subdomains.sh
 
+cat urls.txt | httpx -title -status-code -web-server -ip -tech-detect -silent
