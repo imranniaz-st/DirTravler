@@ -2,3 +2,7 @@ http://101.50.3.36
 http://101.50.3.36:80/cgi-sys/defaultwebpage.cgi
 http://101.50.3.36/robots.txt
 http://103.175.217.63/
+http://108.181.187.26/
+http://108.181.187.26/icons/blank.gif
+http://108.181.187.26/icons/compressed.gif
+http://108.181.187.26/icons/folder.gif
