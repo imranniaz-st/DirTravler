@@ -261,3 +261,8 @@ https://www.paypal.me/wobsoriano&quot;%7D,&quot;platforms&quot;:[%7B&quot;platfo
 https://www.paypal.me/wyqer&quot;%7D,&quot;platforms&quot;:[%7B&quot;platform_type&quot;:&quot;CUSTOM&quot;,&quot;platform_url&quot;:&quot;https://www.paypal.me/wyqer&quot;%7D],&quot;repo_id&quot;:69672290,&quot;owner_id&quot;:38409500,&quot;user_id&quot;:null,&quot;originating_url&quot;:&quot;https://github.com/KillahPotatoes/KP-Ranks/funding_links?fragment=1&quot
 https://www.paypal.me/wyqer&quot;%7D,&quot;platforms&quot;:[%7B&quot;platform_type&quot;:&quot;CUSTOM&quot;,&quot;platform_url&quot;:&quot;https://www.paypal.me/wyqer&quot;%7D],&quot;repo_id&quot;:84099478,&quot;owner_id&quot;:38409500,&quot;user_id&quot;:null,&quot;originating_url&quot;:&quot;https://github.com/KillahPotatoes/KP-Liberation/tree/master&quot
 https://www.paypal.me/wyqer&quot;%7D,&quot;platforms&quot;:[%7B&quot;platform_type&quot;:&quot;CUSTOM&quot;,&quot;platform_url&quot;:&quot;https://www.paypal.me/wyqer&quot;%7D],&quot;repo_id&quot;:84099478,&quot;owner_id&quot;:38409500,&quot;user_id&quot;:null,&quot;originating_url&quot;:&quot;https://github.com/KillahPotatoes/KP-Liberation/tree/v0.96&quot
+https://www.behance.net/Agite
+https://www.behance.net/agitakbulut
+https://www.behance.net/agitandoideas
+https://www.behance.net/agitprimaswara
+https://www.behance.net/agitpropdesign
